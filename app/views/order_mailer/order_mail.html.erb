@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+  <body>
+    <h1>Данные по новому заказу</h1>
+    <p>Обменять <%= @order_params[:from_value] %> <%= @order_params[:from] %> на
+      <%= @order_params[:to_value] %> <%= @order_params[:to] %></p>
+    <p>
+      Кошелек для списания средств: <%= @order_params[:from_pocket] %>
+    </p>
+    <p>
+      Кошелек для получения средств: <%= @order_params[:to_pocket] %>
+    </p>
+    <p>Email клиента: <%= @order_params[:email] %></p>
+  </body>
+</html>

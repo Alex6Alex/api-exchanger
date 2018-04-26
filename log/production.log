@@ -1,0 +1,1440 @@
+I, [2018-04-08T13:44:35.453355 #15810]  INFO -- : [c99427a8-62f3-4c83-89f8-f4fba9cebcbf] Started POST "/api/currencies/confirm_order" for 127.0.0.1 at 2018-04-08 13:44:35 +0300
+I, [2018-04-08T13:44:35.921006 #15810]  INFO -- : [c99427a8-62f3-4c83-89f8-f4fba9cebcbf] Processing by Api::CurrenciesController#confirm_order as HTML
+I, [2018-04-08T13:44:35.921285 #15810]  INFO -- : [c99427a8-62f3-4c83-89f8-f4fba9cebcbf]   Parameters: {"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}, "currency"=>{"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}}}
+I, [2018-04-08T13:44:35.926922 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f7551e-b2fb-4820-8575-87c0016a85af] Performing ActionMailer::DeliveryJob (Job ID: f3f7551e-b2fb-4820-8575-87c0016a85af) from Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:44:35.927385 #15810]  INFO -- : [c99427a8-62f3-4c83-89f8-f4fba9cebcbf] [ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: f3f7551e-b2fb-4820-8575-87c0016a85af) to Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:44:35.927991 #15810]  INFO -- : [c99427a8-62f3-4c83-89f8-f4fba9cebcbf] Completed 204 No Content in 6ms (ActiveRecord: 449.6ms)
+I, [2018-04-08T13:44:35.943316 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f7551e-b2fb-4820-8575-87c0016a85af]   Rendering order_mailer/order_mail.html.erb within layouts/mailer
+I, [2018-04-08T13:44:35.944457 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f7551e-b2fb-4820-8575-87c0016a85af]   Rendered order_mailer/order_mail.html.erb within layouts/mailer (0.9ms)
+D, [2018-04-08T13:44:36.291353 #15810] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f7551e-b2fb-4820-8575-87c0016a85af] OrderMailer#order_mail: processed outbound mail in 354.1ms
+I, [2018-04-08T13:44:39.811991 #15810]  INFO -- : [44e42f55-ecd4-45da-a40c-e7ab12507c14] Started POST "/api/currencies/confirm_order" for 127.0.0.1 at 2018-04-08 13:44:39 +0300
+I, [2018-04-08T13:44:39.813948 #15810]  INFO -- : [44e42f55-ecd4-45da-a40c-e7ab12507c14] Processing by Api::CurrenciesController#confirm_order as HTML
+I, [2018-04-08T13:44:39.814200 #15810]  INFO -- : [44e42f55-ecd4-45da-a40c-e7ab12507c14]   Parameters: {"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}, "currency"=>{"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}}}
+I, [2018-04-08T13:44:39.815779 #15810]  INFO -- : [44e42f55-ecd4-45da-a40c-e7ab12507c14] [ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: f3f14521-9610-476c-abcb-b6fb67b9e078) to Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:44:39.817312 #15810]  INFO -- : [44e42f55-ecd4-45da-a40c-e7ab12507c14] Completed 204 No Content in 3ms (ActiveRecord: 0.0ms)
+I, [2018-04-08T13:44:39.816964 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f14521-9610-476c-abcb-b6fb67b9e078] Performing ActionMailer::DeliveryJob (Job ID: f3f14521-9610-476c-abcb-b6fb67b9e078) from Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:44:39.819590 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f14521-9610-476c-abcb-b6fb67b9e078]   Rendering order_mailer/order_mail.html.erb within layouts/mailer
+I, [2018-04-08T13:44:39.819983 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f14521-9610-476c-abcb-b6fb67b9e078]   Rendered order_mailer/order_mail.html.erb within layouts/mailer (0.1ms)
+D, [2018-04-08T13:44:39.820751 #15810] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f14521-9610-476c-abcb-b6fb67b9e078] OrderMailer#order_mail: processed outbound mail in 2.3ms
+I, [2018-04-08T13:44:40.608920 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f14521-9610-476c-abcb-b6fb67b9e078] Sent mail to rustkoln@yandex.ru (788.0ms)
+D, [2018-04-08T13:44:40.609117 #15810] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f14521-9610-476c-abcb-b6fb67b9e078] Date: Sun, 08 Apr 2018 13:44:39 +0300
+From: rustkoln@yandex.ru
+To: rustkoln@yandex.ru
+Message-ID: <5ac9f297c8b2b_3dc211131a8275b7@alex.mail>
+Subject: New Order
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPG1ldGEgaHR0
+cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNo
+YXJzZXQ9dXRmLTgiIC8+CiAgICA8c3R5bGU+CiAgICAgIC8qIEVtYWlsIHN0
+eWxlcyBuZWVkIHRvIGJlIGlubGluZSAqLwogICAgPC9zdHlsZT4KICA8L2hl
+YWQ+CgogIDxib2R5PgogICAgPCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVh
+ZD4KICA8bWV0YSBjb250ZW50PSd0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgn
+IGh0dHAtZXF1aXY9J0NvbnRlbnQtVHlwZScgLz4KPC9oZWFkPgogIDxib2R5
+PgogICAgPGgxPtCU0LDQvdC90YvQtSDQv9C+INC90L7QstC+0LzRgyDQt9Cw
+0LrQsNC30YM8L2gxPgogICAgPHA+0J7QsdC80LXQvdGP0YLRjCAxMDAwIFJV
+UiDQvdCwCiAgICAgIDAuMDAyNjYgQlRDPC9wPgogICAgPHA+CiAgICAgINCa
+0L7RiNC10LvQtdC6INC00LvRjyDRgdC/0LjRgdCw0L3QuNGPINGB0YDQtdC0
+0YHRgtCyOiAxMjMxMgogICAgPC9wPgogICAgPHA+CiAgICAgINCa0L7RiNC1
+0LvQtdC6INC00LvRjyDQv9C+0LvRg9GH0LXQvdC40Y8g0YHRgNC10LTRgdGC
+0LI6IDMxMjMxMjMxCiAgICA8L3A+CiAgICA8cD5FbWFpbCDQutC70LjQtdC9
+0YLQsDogMzExMjMzMTIzMTI8L3A+CiAgPC9ib2R5Pgo8L2h0bWw+CiAgPC9i
+b2R5Pgo8L2h0bWw+Cg==
+
+I, [2018-04-08T13:44:40.609363 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f14521-9610-476c-abcb-b6fb67b9e078] Performed ActionMailer::DeliveryJob (Job ID: f3f14521-9610-476c-abcb-b6fb67b9e078) from Async(mailers) in 791.33ms
+I, [2018-04-08T13:44:40.627086 #15810]  INFO -- : [3c5b3a9c-bff1-4853-8034-200b4ad4c622] Started POST "/api/currencies/confirm_order" for 127.0.0.1 at 2018-04-08 13:44:40 +0300
+I, [2018-04-08T13:44:40.628451 #15810]  INFO -- : [3c5b3a9c-bff1-4853-8034-200b4ad4c622] Processing by Api::CurrenciesController#confirm_order as HTML
+I, [2018-04-08T13:44:40.628587 #15810]  INFO -- : [3c5b3a9c-bff1-4853-8034-200b4ad4c622]   Parameters: {"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}, "currency"=>{"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}}}
+I, [2018-04-08T13:44:40.631061 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [52a2d073-7a12-49d6-bb93-ba035e773f7d] Performing ActionMailer::DeliveryJob (Job ID: 52a2d073-7a12-49d6-bb93-ba035e773f7d) from Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:44:40.633877 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [52a2d073-7a12-49d6-bb93-ba035e773f7d]   Rendering order_mailer/order_mail.html.erb within layouts/mailer
+I, [2018-04-08T13:44:40.634593 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [52a2d073-7a12-49d6-bb93-ba035e773f7d]   Rendered order_mailer/order_mail.html.erb within layouts/mailer (0.1ms)
+D, [2018-04-08T13:44:40.636099 #15810] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [52a2d073-7a12-49d6-bb93-ba035e773f7d] OrderMailer#order_mail: processed outbound mail in 4.4ms
+I, [2018-04-08T13:44:40.634292 #15810]  INFO -- : [3c5b3a9c-bff1-4853-8034-200b4ad4c622] [ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 52a2d073-7a12-49d6-bb93-ba035e773f7d) to Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"BTC", "to_value"=>0.00266, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:44:40.639949 #15810]  INFO -- : [3c5b3a9c-bff1-4853-8034-200b4ad4c622] Completed 204 No Content in 11ms (ActiveRecord: 0.0ms)
+I, [2018-04-08T13:44:47.669145 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [52a2d073-7a12-49d6-bb93-ba035e773f7d] Sent mail to rustkoln@yandex.ru (7032.7ms)
+D, [2018-04-08T13:44:47.669381 #15810] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [52a2d073-7a12-49d6-bb93-ba035e773f7d] Date: Sun, 08 Apr 2018 13:44:40 +0300
+From: rustkoln@yandex.ru
+To: rustkoln@yandex.ru
+Message-ID: <5ac9f2989bc45_3dc211131a82767d@alex.mail>
+Subject: New Order
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPG1ldGEgaHR0
+cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNo
+YXJzZXQ9dXRmLTgiIC8+CiAgICA8c3R5bGU+CiAgICAgIC8qIEVtYWlsIHN0
+eWxlcyBuZWVkIHRvIGJlIGlubGluZSAqLwogICAgPC9zdHlsZT4KICA8L2hl
+YWQ+CgogIDxib2R5PgogICAgPCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVh
+ZD4KICA8bWV0YSBjb250ZW50PSd0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgn
+IGh0dHAtZXF1aXY9J0NvbnRlbnQtVHlwZScgLz4KPC9oZWFkPgogIDxib2R5
+PgogICAgPGgxPtCU0LDQvdC90YvQtSDQv9C+INC90L7QstC+0LzRgyDQt9Cw
+0LrQsNC30YM8L2gxPgogICAgPHA+0J7QsdC80LXQvdGP0YLRjCAxMDAwIFJV
+UiDQvdCwCiAgICAgIDAuMDAyNjYgQlRDPC9wPgogICAgPHA+CiAgICAgINCa
+0L7RiNC10LvQtdC6INC00LvRjyDRgdC/0LjRgdCw0L3QuNGPINGB0YDQtdC0
+0YHRgtCyOiAxMjMxMgogICAgPC9wPgogICAgPHA+CiAgICAgINCa0L7RiNC1
+0LvQtdC6INC00LvRjyDQv9C+0LvRg9GH0LXQvdC40Y8g0YHRgNC10LTRgdGC
+0LI6IDMxMjMxMjMxCiAgICA8L3A+CiAgICA8cD5FbWFpbCDQutC70LjQtdC9
+0YLQsDogMzExMjMzMTIzMTI8L3A+CiAgPC9ib2R5Pgo8L2h0bWw+CiAgPC9i
+b2R5Pgo8L2h0bWw+Cg==
+
+I, [2018-04-08T13:44:47.669640 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [52a2d073-7a12-49d6-bb93-ba035e773f7d] Performed ActionMailer::DeliveryJob (Job ID: 52a2d073-7a12-49d6-bb93-ba035e773f7d) from Async(mailers) in 7038.3ms
+I, [2018-04-08T13:44:48.287631 #15810]  INFO -- : [9c63ac61-bbf3-442d-ae67-9a2671c5f5cf] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=BTC" for 127.0.0.1 at 2018-04-08 13:44:48 +0300
+I, [2018-04-08T13:44:48.288583 #15810]  INFO -- : [9c63ac61-bbf3-442d-ae67-9a2671c5f5cf] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:44:48.289370 #15810]  INFO -- : [9c63ac61-bbf3-442d-ae67-9a2671c5f5cf]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"BTC"}
+I, [2018-04-08T13:44:48.820286 #15810]  INFO -- : [9c63ac61-bbf3-442d-ae67-9a2671c5f5cf] Completed 200 OK in 531ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:45:08.282837 #15810]  INFO -- : [de02b0e6-41a8-4cec-b7a0-1e2110661789] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=BTC" for 127.0.0.1 at 2018-04-08 13:45:08 +0300
+I, [2018-04-08T13:45:08.284850 #15810]  INFO -- : [de02b0e6-41a8-4cec-b7a0-1e2110661789] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:45:08.284988 #15810]  INFO -- : [de02b0e6-41a8-4cec-b7a0-1e2110661789]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"BTC"}
+I, [2018-04-08T13:45:08.816488 #15810]  INFO -- : [de02b0e6-41a8-4cec-b7a0-1e2110661789] Completed 200 OK in 531ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:45:18.215624 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f7551e-b2fb-4820-8575-87c0016a85af] Sent mail to rustkoln@yandex.ru (41923.9ms)
+D, [2018-04-08T13:45:18.215840 #15810] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f7551e-b2fb-4820-8575-87c0016a85af] Date: Sun, 08 Apr 2018 13:44:36 +0300
+From: rustkoln@yandex.ru
+To: rustkoln@yandex.ru
+Message-ID: <5ac9f294487a4_3dc2165eeb4274b4@alex.mail>
+Subject: New Order
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPG1ldGEgaHR0
+cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNo
+YXJzZXQ9dXRmLTgiIC8+CiAgICA8c3R5bGU+CiAgICAgIC8qIEVtYWlsIHN0
+eWxlcyBuZWVkIHRvIGJlIGlubGluZSAqLwogICAgPC9zdHlsZT4KICA8L2hl
+YWQ+CgogIDxib2R5PgogICAgPCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVh
+ZD4KICA8bWV0YSBjb250ZW50PSd0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgn
+IGh0dHAtZXF1aXY9J0NvbnRlbnQtVHlwZScgLz4KPC9oZWFkPgogIDxib2R5
+PgogICAgPGgxPtCU0LDQvdC90YvQtSDQv9C+INC90L7QstC+0LzRgyDQt9Cw
+0LrQsNC30YM8L2gxPgogICAgPHA+0J7QsdC80LXQvdGP0YLRjCAxMDAwIFJV
+UiDQvdCwCiAgICAgIDAuMDAyNjYgQlRDPC9wPgogICAgPHA+CiAgICAgINCa
+0L7RiNC10LvQtdC6INC00LvRjyDRgdC/0LjRgdCw0L3QuNGPINGB0YDQtdC0
+0YHRgtCyOiAxMjMxMgogICAgPC9wPgogICAgPHA+CiAgICAgINCa0L7RiNC1
+0LvQtdC6INC00LvRjyDQv9C+0LvRg9GH0LXQvdC40Y8g0YHRgNC10LTRgdGC
+0LI6IDMxMjMxMjMxCiAgICA8L3A+CiAgICA8cD5FbWFpbCDQutC70LjQtdC9
+0YLQsDogMzExMjMzMTIzMTI8L3A+CiAgPC9ib2R5Pgo8L2h0bWw+CiAgPC9i
+b2R5Pgo8L2h0bWw+Cg==
+
+I, [2018-04-08T13:45:18.216086 #15810]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [f3f7551e-b2fb-4820-8575-87c0016a85af] Performed ActionMailer::DeliveryJob (Job ID: f3f7551e-b2fb-4820-8575-87c0016a85af) from Async(mailers) in 42288.89ms
+I, [2018-04-08T13:45:28.280510 #15810]  INFO -- : [82c37738-ab9a-4b0e-bf4f-b3f6dba8f259] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=BTC" for 127.0.0.1 at 2018-04-08 13:45:28 +0300
+I, [2018-04-08T13:45:28.281696 #15810]  INFO -- : [82c37738-ab9a-4b0e-bf4f-b3f6dba8f259] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:45:28.281835 #15810]  INFO -- : [82c37738-ab9a-4b0e-bf4f-b3f6dba8f259]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"BTC"}
+I, [2018-04-08T13:45:28.822054 #15810]  INFO -- : [82c37738-ab9a-4b0e-bf4f-b3f6dba8f259] Completed 200 OK in 540ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:45:48.282027 #15888]  INFO -- : [1272006b-faa2-4150-bb40-3c4440639186] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=BTC" for 127.0.0.1 at 2018-04-08 13:45:48 +0300
+I, [2018-04-08T13:45:48.288137 #15888]  INFO -- : [1272006b-faa2-4150-bb40-3c4440639186] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:45:48.288321 #15888]  INFO -- : [1272006b-faa2-4150-bb40-3c4440639186]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"BTC"}
+I, [2018-04-08T13:45:48.823011 #15888]  INFO -- : [1272006b-faa2-4150-bb40-3c4440639186] Completed 200 OK in 534ms (Views: 0.5ms)
+I, [2018-04-08T13:45:54.393287 #15888]  INFO -- : [1b8422e5-34bb-4dcc-9b8e-9744b74bf806] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:45:54 +0300
+I, [2018-04-08T13:45:54.394209 #15888]  INFO -- : [1b8422e5-34bb-4dcc-9b8e-9744b74bf806] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:45:54.394359 #15888]  INFO -- : [1b8422e5-34bb-4dcc-9b8e-9744b74bf806]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:45:54.868436 #15888]  INFO -- : [1b8422e5-34bb-4dcc-9b8e-9744b74bf806] Completed 200 OK in 474ms (Views: 0.3ms)
+I, [2018-04-08T13:45:56.741548 #15888]  INFO -- : [f4c53d90-74e5-458f-87d6-8268756ed949] Started POST "/api/currencies/confirm_order" for 127.0.0.1 at 2018-04-08 13:45:56 +0300
+I, [2018-04-08T13:45:56.768472 #15888]  INFO -- : [f4c53d90-74e5-458f-87d6-8268756ed949] Processing by Api::CurrenciesController#confirm_order as HTML
+I, [2018-04-08T13:45:56.768730 #15888]  INFO -- : [f4c53d90-74e5-458f-87d6-8268756ed949]   Parameters: {"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"XRP", "to_value"=>37.54, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}, "currency"=>{"params"=>{"from"=>"RUR", "from_value"=>"1000", "to"=>"XRP", "to_value"=>37.54, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}}}
+I, [2018-04-08T13:45:56.772873 #15888]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [08ebf80e-0a82-48f3-bc2f-1acf6b5653f4] Performing ActionMailer::DeliveryJob (Job ID: 08ebf80e-0a82-48f3-bc2f-1acf6b5653f4) from Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"XRP", "to_value"=>37.54, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:45:56.773355 #15888]  INFO -- : [f4c53d90-74e5-458f-87d6-8268756ed949] [ActiveJob] Enqueued ActionMailer::DeliveryJob (Job ID: 08ebf80e-0a82-48f3-bc2f-1acf6b5653f4) to Async(mailers) with arguments: "OrderMailer", "order_mail", "deliver_now", {"from"=>"RUR", "from_value"=>"1000", "to"=>"XRP", "to_value"=>37.54, "from_pocket"=>"12312", "to_pocket"=>"31231231", "email"=>"31123312312"}
+I, [2018-04-08T13:45:56.773779 #15888]  INFO -- : [f4c53d90-74e5-458f-87d6-8268756ed949] Completed 204 No Content in 5ms (ActiveRecord: 11.3ms)
+I, [2018-04-08T13:45:56.789203 #15888]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [08ebf80e-0a82-48f3-bc2f-1acf6b5653f4]   Rendering order_mailer/order_mail.html.erb within layouts/mailer
+I, [2018-04-08T13:45:56.790364 #15888]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [08ebf80e-0a82-48f3-bc2f-1acf6b5653f4]   Rendered order_mailer/order_mail.html.erb within layouts/mailer (0.9ms)
+D, [2018-04-08T13:45:57.127148 #15888] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [08ebf80e-0a82-48f3-bc2f-1acf6b5653f4] OrderMailer#order_mail: processed outbound mail in 344.2ms
+I, [2018-04-08T13:45:57.992938 #15888]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [08ebf80e-0a82-48f3-bc2f-1acf6b5653f4] Sent mail to rustkoln@yandex.ru, alife4ever@mail.ru (865.5ms)
+D, [2018-04-08T13:45:57.993123 #15888] DEBUG -- : [ActiveJob] [ActionMailer::DeliveryJob] [08ebf80e-0a82-48f3-bc2f-1acf6b5653f4] Date: Sun, 08 Apr 2018 13:45:57 +0300
+From: rustkoln@yandex.ru
+To: rustkoln@yandex.ru, 
+ alife4ever@mail.ru
+Message-ID: <5ac9f2e52040e_3e101baf4b856530@alex.mail>
+Subject: New Order
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+CjxodG1sPgogIDxoZWFkPgogICAgPG1ldGEgaHR0
+cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNo
+YXJzZXQ9dXRmLTgiIC8+CiAgICA8c3R5bGU+CiAgICAgIC8qIEVtYWlsIHN0
+eWxlcyBuZWVkIHRvIGJlIGlubGluZSAqLwogICAgPC9zdHlsZT4KICA8L2hl
+YWQ+CgogIDxib2R5PgogICAgPCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVh
+ZD4KICA8bWV0YSBjb250ZW50PSd0ZXh0L2h0bWw7IGNoYXJzZXQ9VVRGLTgn
+IGh0dHAtZXF1aXY9J0NvbnRlbnQtVHlwZScgLz4KPC9oZWFkPgogIDxib2R5
+PgogICAgPGgxPtCU0LDQvdC90YvQtSDQv9C+INC90L7QstC+0LzRgyDQt9Cw
+0LrQsNC30YM8L2gxPgogICAgPHA+0J7QsdC80LXQvdGP0YLRjCAxMDAwIFJV
+UiDQvdCwCiAgICAgIDM3LjU0IFhSUDwvcD4KICAgIDxwPgogICAgICDQmtC+
+0YjQtdC70LXQuiDQtNC70Y8g0YHQv9C40YHQsNC90LjRjyDRgdGA0LXQtNGB
+0YLQsjogMTIzMTIKICAgIDwvcD4KICAgIDxwPgogICAgICDQmtC+0YjQtdC7
+0LXQuiDQtNC70Y8g0L/QvtC70YPRh9C10L3QuNGPINGB0YDQtdC00YHRgtCy
+OiAzMTIzMTIzMQogICAgPC9wPgogICAgPHA+RW1haWwg0LrQu9C40LXQvdGC
+0LA6IDMxMTIzMzEyMzEyPC9wPgogIDwvYm9keT4KPC9odG1sPgogIDwvYm9k
+eT4KPC9odG1sPgo=
+
+I, [2018-04-08T13:45:57.993352 #15888]  INFO -- : [ActiveJob] [ActionMailer::DeliveryJob] [08ebf80e-0a82-48f3-bc2f-1acf6b5653f4] Performed ActionMailer::DeliveryJob (Job ID: 08ebf80e-0a82-48f3-bc2f-1acf6b5653f4) from Async(mailers) in 1220.15ms
+I, [2018-04-08T13:46:08.281232 #15888]  INFO -- : [87fb5a38-355a-47b2-a597-c4e8ebcafdfa] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:46:08 +0300
+I, [2018-04-08T13:46:08.282823 #15888]  INFO -- : [87fb5a38-355a-47b2-a597-c4e8ebcafdfa] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:46:08.282998 #15888]  INFO -- : [87fb5a38-355a-47b2-a597-c4e8ebcafdfa]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:46:08.759156 #15888]  INFO -- : [87fb5a38-355a-47b2-a597-c4e8ebcafdfa] Completed 200 OK in 476ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:46:28.287568 #15888]  INFO -- : [21102273-c15d-456e-b257-e7a7a6756f3d] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:46:28 +0300
+I, [2018-04-08T13:46:28.288485 #15888]  INFO -- : [21102273-c15d-456e-b257-e7a7a6756f3d] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:46:28.288576 #15888]  INFO -- : [21102273-c15d-456e-b257-e7a7a6756f3d]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:46:28.768525 #15888]  INFO -- : [21102273-c15d-456e-b257-e7a7a6756f3d] Completed 200 OK in 480ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:46:48.284993 #15888]  INFO -- : [71692465-d90e-4d9e-b7a2-5e0fffc54032] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:46:48 +0300
+I, [2018-04-08T13:46:48.286454 #15888]  INFO -- : [71692465-d90e-4d9e-b7a2-5e0fffc54032] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:46:48.286684 #15888]  INFO -- : [71692465-d90e-4d9e-b7a2-5e0fffc54032]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:46:48.796655 #15888]  INFO -- : [71692465-d90e-4d9e-b7a2-5e0fffc54032] Completed 200 OK in 510ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:47:08.281736 #15888]  INFO -- : [5b8cb227-b6a1-4807-b6d6-fddf131e445c] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:47:08 +0300
+I, [2018-04-08T13:47:08.283032 #15888]  INFO -- : [5b8cb227-b6a1-4807-b6d6-fddf131e445c] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:47:08.283200 #15888]  INFO -- : [5b8cb227-b6a1-4807-b6d6-fddf131e445c]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:47:08.824168 #15888]  INFO -- : [5b8cb227-b6a1-4807-b6d6-fddf131e445c] Completed 200 OK in 541ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:47:28.283543 #15888]  INFO -- : [50dd9c79-4093-41e1-9649-878bc2a12a80] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:47:28 +0300
+I, [2018-04-08T13:47:28.284534 #15888]  INFO -- : [50dd9c79-4093-41e1-9649-878bc2a12a80] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:47:28.285483 #15888]  INFO -- : [50dd9c79-4093-41e1-9649-878bc2a12a80]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:47:28.874872 #15888]  INFO -- : [50dd9c79-4093-41e1-9649-878bc2a12a80] Completed 200 OK in 589ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:47:48.283060 #15888]  INFO -- : [52c2c9b9-f7dd-438e-a266-ceee4fde7c0e] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:47:48 +0300
+I, [2018-04-08T13:47:48.284127 #15888]  INFO -- : [52c2c9b9-f7dd-438e-a266-ceee4fde7c0e] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:47:48.285338 #15888]  INFO -- : [52c2c9b9-f7dd-438e-a266-ceee4fde7c0e]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:47:48.806075 #15888]  INFO -- : [52c2c9b9-f7dd-438e-a266-ceee4fde7c0e] Completed 200 OK in 520ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:48:08.283562 #15888]  INFO -- : [f0ac9281-23c2-41c0-b206-8cd81684eb28] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:48:08 +0300
+I, [2018-04-08T13:48:08.285842 #15888]  INFO -- : [f0ac9281-23c2-41c0-b206-8cd81684eb28] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:48:08.286010 #15888]  INFO -- : [f0ac9281-23c2-41c0-b206-8cd81684eb28]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:48:08.764424 #15888]  INFO -- : [f0ac9281-23c2-41c0-b206-8cd81684eb28] Completed 200 OK in 478ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:48:28.282828 #15888]  INFO -- : [b38aa569-1175-4a88-bad6-19fe75d26280] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:48:28 +0300
+I, [2018-04-08T13:48:28.284752 #15888]  INFO -- : [b38aa569-1175-4a88-bad6-19fe75d26280] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:48:28.284884 #15888]  INFO -- : [b38aa569-1175-4a88-bad6-19fe75d26280]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:48:28.773144 #15888]  INFO -- : [b38aa569-1175-4a88-bad6-19fe75d26280] Completed 200 OK in 488ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:48:48.282043 #15888]  INFO -- : [d478cd57-9537-4912-89b0-9fcb3d53fd26] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:48:48 +0300
+I, [2018-04-08T13:48:48.283004 #15888]  INFO -- : [d478cd57-9537-4912-89b0-9fcb3d53fd26] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:48:48.283096 #15888]  INFO -- : [d478cd57-9537-4912-89b0-9fcb3d53fd26]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:48:48.762264 #15888]  INFO -- : [d478cd57-9537-4912-89b0-9fcb3d53fd26] Completed 200 OK in 479ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:49:08.282796 #15888]  INFO -- : [19759f54-4446-4d9e-a452-5ce972cf73ac] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:49:08 +0300
+I, [2018-04-08T13:49:08.283965 #15888]  INFO -- : [19759f54-4446-4d9e-a452-5ce972cf73ac] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:49:08.284105 #15888]  INFO -- : [19759f54-4446-4d9e-a452-5ce972cf73ac]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:49:08.816803 #15888]  INFO -- : [19759f54-4446-4d9e-a452-5ce972cf73ac] Completed 200 OK in 533ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:49:28.281211 #15888]  INFO -- : [b6a26a8d-1817-40fa-ada2-872edb53cc13] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:49:28 +0300
+I, [2018-04-08T13:49:28.283612 #15888]  INFO -- : [b6a26a8d-1817-40fa-ada2-872edb53cc13] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:49:28.283840 #15888]  INFO -- : [b6a26a8d-1817-40fa-ada2-872edb53cc13]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:49:28.748316 #15888]  INFO -- : [b6a26a8d-1817-40fa-ada2-872edb53cc13] Completed 200 OK in 464ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:49:48.287770 #15888]  INFO -- : [44609360-8466-47b5-a1f0-302bef42b9ca] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:49:48 +0300
+I, [2018-04-08T13:49:48.288882 #15888]  INFO -- : [44609360-8466-47b5-a1f0-302bef42b9ca] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:49:48.289055 #15888]  INFO -- : [44609360-8466-47b5-a1f0-302bef42b9ca]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:49:48.753434 #15888]  INFO -- : [44609360-8466-47b5-a1f0-302bef42b9ca] Completed 200 OK in 464ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:50:08.288858 #15888]  INFO -- : [6f6b8874-6a6f-48f0-bcac-7f1f5dee5d11] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:50:08 +0300
+I, [2018-04-08T13:50:08.290901 #15888]  INFO -- : [6f6b8874-6a6f-48f0-bcac-7f1f5dee5d11] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:50:08.291073 #15888]  INFO -- : [6f6b8874-6a6f-48f0-bcac-7f1f5dee5d11]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:50:08.803594 #15888]  INFO -- : [6f6b8874-6a6f-48f0-bcac-7f1f5dee5d11] Completed 200 OK in 512ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:50:28.284122 #15888]  INFO -- : [2a429d9c-68ed-43bb-9559-0745cfa8e209] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:50:28 +0300
+I, [2018-04-08T13:50:28.285275 #15888]  INFO -- : [2a429d9c-68ed-43bb-9559-0745cfa8e209] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:50:28.285441 #15888]  INFO -- : [2a429d9c-68ed-43bb-9559-0745cfa8e209]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:50:28.796661 #15888]  INFO -- : [2a429d9c-68ed-43bb-9559-0745cfa8e209] Completed 200 OK in 511ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:50:48.282830 #15888]  INFO -- : [bb3a070f-e1f7-4a2e-8a69-ab312595bb5d] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:50:48 +0300
+I, [2018-04-08T13:50:48.284934 #15888]  INFO -- : [bb3a070f-e1f7-4a2e-8a69-ab312595bb5d] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:50:48.285158 #15888]  INFO -- : [bb3a070f-e1f7-4a2e-8a69-ab312595bb5d]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:50:48.777511 #15888]  INFO -- : [bb3a070f-e1f7-4a2e-8a69-ab312595bb5d] Completed 200 OK in 492ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:51:08.282249 #15888]  INFO -- : [357f82c4-3117-44d3-9a6f-4cd66e7417c2] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:51:08 +0300
+I, [2018-04-08T13:51:08.283576 #15888]  INFO -- : [357f82c4-3117-44d3-9a6f-4cd66e7417c2] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:51:08.283724 #15888]  INFO -- : [357f82c4-3117-44d3-9a6f-4cd66e7417c2]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:51:08.969663 #15888]  INFO -- : [357f82c4-3117-44d3-9a6f-4cd66e7417c2] Completed 200 OK in 686ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:51:28.283321 #15888]  INFO -- : [60ded327-2043-4373-a51e-d3de0e29ed6f] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:51:28 +0300
+I, [2018-04-08T13:51:28.284582 #15888]  INFO -- : [60ded327-2043-4373-a51e-d3de0e29ed6f] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:51:28.284727 #15888]  INFO -- : [60ded327-2043-4373-a51e-d3de0e29ed6f]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:51:28.813507 #15888]  INFO -- : [60ded327-2043-4373-a51e-d3de0e29ed6f] Completed 200 OK in 529ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:51:48.288113 #15888]  INFO -- : [dc1d403e-7abd-44ee-a843-06aae5ab828a] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:51:48 +0300
+I, [2018-04-08T13:51:48.290809 #15888]  INFO -- : [dc1d403e-7abd-44ee-a843-06aae5ab828a] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:51:48.290986 #15888]  INFO -- : [dc1d403e-7abd-44ee-a843-06aae5ab828a]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:51:48.765296 #15888]  INFO -- : [dc1d403e-7abd-44ee-a843-06aae5ab828a] Completed 200 OK in 474ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:52:08.280337 #15888]  INFO -- : [a0de1581-0e60-4bd0-a4d3-12693f5a2773] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:52:08 +0300
+I, [2018-04-08T13:52:08.281987 #15888]  INFO -- : [a0de1581-0e60-4bd0-a4d3-12693f5a2773] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:52:08.282140 #15888]  INFO -- : [a0de1581-0e60-4bd0-a4d3-12693f5a2773]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:52:08.753573 #15888]  INFO -- : [a0de1581-0e60-4bd0-a4d3-12693f5a2773] Completed 200 OK in 471ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:52:28.281628 #15888]  INFO -- : [26b42568-8bfe-440b-a385-f96c3aededf8] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:52:28 +0300
+I, [2018-04-08T13:52:28.282832 #15888]  INFO -- : [26b42568-8bfe-440b-a385-f96c3aededf8] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:52:28.282975 #15888]  INFO -- : [26b42568-8bfe-440b-a385-f96c3aededf8]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:52:28.819125 #15888]  INFO -- : [26b42568-8bfe-440b-a385-f96c3aededf8] Completed 200 OK in 536ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:52:48.286053 #15888]  INFO -- : [d4590864-6d48-4c28-ac50-c37fc0166149] Started GET "/api/currencies/current_course?sell_currency=RUR&buy_currency=XRP" for 127.0.0.1 at 2018-04-08 13:52:48 +0300
+I, [2018-04-08T13:52:48.287139 #15888]  INFO -- : [d4590864-6d48-4c28-ac50-c37fc0166149] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T13:52:48.287245 #15888]  INFO -- : [d4590864-6d48-4c28-ac50-c37fc0166149]   Parameters: {"sell_currency"=>"RUR", "buy_currency"=>"XRP"}
+I, [2018-04-08T13:52:48.818052 #15888]  INFO -- : [d4590864-6d48-4c28-ac50-c37fc0166149] Completed 200 OK in 531ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T13:57:35.574401 #15888]  INFO -- : [fbfe6a02-4c88-47f5-b2be-5f970ae67d59] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 13:57:35 +0300
+I, [2018-04-08T13:57:35.575559 #15888]  INFO -- : [fbfe6a02-4c88-47f5-b2be-5f970ae67d59] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T13:57:35.590245 #15888]  INFO -- : [fbfe6a02-4c88-47f5-b2be-5f970ae67d59] Completed 500 Internal Server Error in 14ms (ActiveRecord: 6.5ms)
+F, [2018-04-08T13:57:35.591992 #15888] FATAL -- : [fbfe6a02-4c88-47f5-b2be-5f970ae67d59]   
+F, [2018-04-08T13:57:35.592088 #15888] FATAL -- : [fbfe6a02-4c88-47f5-b2be-5f970ae67d59] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T13:57:35.592152 #15888] FATAL -- : [fbfe6a02-4c88-47f5-b2be-5f970ae67d59]   
+F, [2018-04-08T13:57:35.592214 #15888] FATAL -- : [fbfe6a02-4c88-47f5-b2be-5f970ae67d59] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:03:07.602268 #17282]  INFO -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:03:07 +0300
+I, [2018-04-08T14:03:07.606430 #17282]  INFO -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:03:07.610252 #17282]  INFO -- : [88d4b851-d7aa-43ea-84a8-cf9a44154e05] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:03:07 +0300
+I, [2018-04-08T14:03:07.611597 #17282]  INFO -- : [88d4b851-d7aa-43ea-84a8-cf9a44154e05] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:03:07.646016 #17282]  INFO -- : [88d4b851-d7aa-43ea-84a8-cf9a44154e05] Completed 500 Internal Server Error in 34ms (ActiveRecord: 12.7ms)
+F, [2018-04-08T14:03:07.647852 #17282] FATAL -- : [88d4b851-d7aa-43ea-84a8-cf9a44154e05]   
+F, [2018-04-08T14:03:07.648249 #17282] FATAL -- : [88d4b851-d7aa-43ea-84a8-cf9a44154e05] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:03:07.648343 #17282] FATAL -- : [88d4b851-d7aa-43ea-84a8-cf9a44154e05]   
+F, [2018-04-08T14:03:07.648936 #17282] FATAL -- : [88d4b851-d7aa-43ea-84a8-cf9a44154e05] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+D, [2018-04-08T14:03:07.649680 #17282] DEBUG -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf]   [1m[36mCurrency Load (0.7ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:03:07.649986 #17282]  INFO -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf] Completed 500 Internal Server Error in 43ms (ActiveRecord: 24.4ms)
+F, [2018-04-08T14:03:07.651542 #17282] FATAL -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf]   
+F, [2018-04-08T14:03:07.651636 #17282] FATAL -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:03:07.651699 #17282] FATAL -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf]   
+F, [2018-04-08T14:03:07.651762 #17282] FATAL -- : [86af624c-c8bd-4f56-977a-07c069ff5bbf] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:03:10.229516 #17282]  INFO -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:03:10 +0300
+I, [2018-04-08T14:03:10.230575 #17282]  INFO -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41] Processing by Api::CurrenciesController#currency_list as HTML
+D, [2018-04-08T14:03:10.232578 #17282] DEBUG -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41]   [1m[36mCurrency Load (0.6ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:03:10.232939 #17282]  INFO -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms)
+F, [2018-04-08T14:03:10.234424 #17282] FATAL -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41]   
+F, [2018-04-08T14:03:10.234495 #17282] FATAL -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:03:10.234541 #17282] FATAL -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41]   
+F, [2018-04-08T14:03:10.234593 #17282] FATAL -- : [8002bb3f-91de-4a67-b745-20dcdc10aa41] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:03:10.238198 #17282]  INFO -- : [f0c9f1d0-a3cd-4713-9a21-a30b4bce3df6] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:03:10 +0300
+I, [2018-04-08T14:03:10.239018 #17282]  INFO -- : [f0c9f1d0-a3cd-4713-9a21-a30b4bce3df6] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:03:10.241370 #17282]  INFO -- : [f0c9f1d0-a3cd-4713-9a21-a30b4bce3df6] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms)
+F, [2018-04-08T14:03:10.243301 #17282] FATAL -- : [f0c9f1d0-a3cd-4713-9a21-a30b4bce3df6]   
+F, [2018-04-08T14:03:10.243414 #17282] FATAL -- : [f0c9f1d0-a3cd-4713-9a21-a30b4bce3df6] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:03:10.243492 #17282] FATAL -- : [f0c9f1d0-a3cd-4713-9a21-a30b4bce3df6]   
+F, [2018-04-08T14:03:10.243553 #17282] FATAL -- : [f0c9f1d0-a3cd-4713-9a21-a30b4bce3df6] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:03:17.246006 #17282]  INFO -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:03:17 +0300
+I, [2018-04-08T14:03:17.247006 #17282]  INFO -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861] Processing by Api::CurrenciesController#currency_list as HTML
+D, [2018-04-08T14:03:17.248753 #17282] DEBUG -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861]   [1m[36mCurrency Load (0.5ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:03:17.249079 #17282]  INFO -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.5ms)
+F, [2018-04-08T14:03:17.250624 #17282] FATAL -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861]   
+F, [2018-04-08T14:03:17.250712 #17282] FATAL -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:03:17.250762 #17282] FATAL -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861]   
+F, [2018-04-08T14:03:17.250820 #17282] FATAL -- : [17e1b96d-be0a-4af1-b2b5-3db292bf5861] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:03:17.254570 #17282]  INFO -- : [05aca2e3-9669-4526-a727-bf694a6ebd6a] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:03:17 +0300
+I, [2018-04-08T14:03:17.255477 #17282]  INFO -- : [05aca2e3-9669-4526-a727-bf694a6ebd6a] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:03:17.257740 #17282]  INFO -- : [05aca2e3-9669-4526-a727-bf694a6ebd6a] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.7ms)
+F, [2018-04-08T14:03:17.259171 #17282] FATAL -- : [05aca2e3-9669-4526-a727-bf694a6ebd6a]   
+F, [2018-04-08T14:03:17.259289 #17282] FATAL -- : [05aca2e3-9669-4526-a727-bf694a6ebd6a] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:03:17.259340 #17282] FATAL -- : [05aca2e3-9669-4526-a727-bf694a6ebd6a]   
+F, [2018-04-08T14:03:17.259383 #17282] FATAL -- : [05aca2e3-9669-4526-a727-bf694a6ebd6a] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:03:28.332032 #17282]  INFO -- : [a48dc018-88de-4767-9211-86aba11fe314] Started GET "/" for 127.0.0.1 at 2018-04-08 14:03:28 +0300
+F, [2018-04-08T14:03:28.333220 #17282] FATAL -- : [a48dc018-88de-4767-9211-86aba11fe314]   
+F, [2018-04-08T14:03:28.333334 #17282] FATAL -- : [a48dc018-88de-4767-9211-86aba11fe314] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-08T14:03:28.333386 #17282] FATAL -- : [a48dc018-88de-4767-9211-86aba11fe314]   
+F, [2018-04-08T14:03:28.333455 #17282] FATAL -- : [a48dc018-88de-4767-9211-86aba11fe314] actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+[a48dc018-88de-4767-9211-86aba11fe314] railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+[a48dc018-88de-4767-9211-86aba11fe314] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[a48dc018-88de-4767-9211-86aba11fe314] activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+[a48dc018-88de-4767-9211-86aba11fe314] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+[a48dc018-88de-4767-9211-86aba11fe314] railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] railties (5.1.5) lib/rails/engine.rb:522:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+[a48dc018-88de-4767-9211-86aba11fe314] puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+[a48dc018-88de-4767-9211-86aba11fe314] puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+[a48dc018-88de-4767-9211-86aba11fe314] puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+[a48dc018-88de-4767-9211-86aba11fe314] puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-08T14:03:28.692638 #17282]  INFO -- : [c4eb7497-04bf-426b-a9bd-97d58b1f9f91] Started GET "/favicon.ico" for 127.0.0.1 at 2018-04-08 14:03:28 +0300
+F, [2018-04-08T14:03:28.693758 #17282] FATAL -- : [c4eb7497-04bf-426b-a9bd-97d58b1f9f91]   
+F, [2018-04-08T14:03:28.693854 #17282] FATAL -- : [c4eb7497-04bf-426b-a9bd-97d58b1f9f91] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-04-08T14:03:28.693899 #17282] FATAL -- : [c4eb7497-04bf-426b-a9bd-97d58b1f9f91]   
+F, [2018-04-08T14:03:28.693958 #17282] FATAL -- : [c4eb7497-04bf-426b-a9bd-97d58b1f9f91] actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] railties (5.1.5) lib/rails/engine.rb:522:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+[c4eb7497-04bf-426b-a9bd-97d58b1f9f91] puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-08T14:03:38.939031 #17282]  INFO -- : [a0791360-bcd2-4464-8c4c-705a5b2c7c57] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:03:38 +0300
+I, [2018-04-08T14:03:38.940270 #17282]  INFO -- : [a0791360-bcd2-4464-8c4c-705a5b2c7c57] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:03:38.943357 #17282]  INFO -- : [a0791360-bcd2-4464-8c4c-705a5b2c7c57] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.4ms)
+F, [2018-04-08T14:03:38.945118 #17282] FATAL -- : [a0791360-bcd2-4464-8c4c-705a5b2c7c57]   
+F, [2018-04-08T14:03:38.945287 #17282] FATAL -- : [a0791360-bcd2-4464-8c4c-705a5b2c7c57] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:03:38.945369 #17282] FATAL -- : [a0791360-bcd2-4464-8c4c-705a5b2c7c57]   
+F, [2018-04-08T14:03:38.945423 #17282] FATAL -- : [a0791360-bcd2-4464-8c4c-705a5b2c7c57] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:03:44.310576 #17282]  INFO -- : [5b92f651-32e5-4ec2-a359-949408ed5cdd] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:03:44 +0300
+I, [2018-04-08T14:03:44.311782 #17282]  INFO -- : [5b92f651-32e5-4ec2-a359-949408ed5cdd] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:03:44.314528 #17282]  INFO -- : [5b92f651-32e5-4ec2-a359-949408ed5cdd] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.1ms)
+F, [2018-04-08T14:03:44.317795 #17282] FATAL -- : [5b92f651-32e5-4ec2-a359-949408ed5cdd]   
+F, [2018-04-08T14:03:44.318057 #17282] FATAL -- : [5b92f651-32e5-4ec2-a359-949408ed5cdd] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:03:44.318168 #17282] FATAL -- : [5b92f651-32e5-4ec2-a359-949408ed5cdd]   
+F, [2018-04-08T14:03:44.318243 #17282] FATAL -- : [5b92f651-32e5-4ec2-a359-949408ed5cdd] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:03:50.054978 #17282]  INFO -- : [8185088c-4146-4114-a27e-bf71904efe11] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:03:50 +0300
+I, [2018-04-08T14:03:50.056000 #17282]  INFO -- : [8185088c-4146-4114-a27e-bf71904efe11] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:03:50.058677 #17282]  INFO -- : [8185088c-4146-4114-a27e-bf71904efe11] Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.0ms)
+F, [2018-04-08T14:03:50.060257 #17282] FATAL -- : [8185088c-4146-4114-a27e-bf71904efe11]   
+F, [2018-04-08T14:03:50.060346 #17282] FATAL -- : [8185088c-4146-4114-a27e-bf71904efe11] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:03:50.060411 #17282] FATAL -- : [8185088c-4146-4114-a27e-bf71904efe11]   
+F, [2018-04-08T14:03:50.060467 #17282] FATAL -- : [8185088c-4146-4114-a27e-bf71904efe11] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:04:55.589322 #17408]  INFO -- : [06942443-c30f-4d51-879d-c21286193435] Started GET "/" for 127.0.0.1 at 2018-04-08 14:04:55 +0300
+F, [2018-04-08T14:04:55.593370 #17408] FATAL -- : [06942443-c30f-4d51-879d-c21286193435]   
+F, [2018-04-08T14:04:55.593521 #17408] FATAL -- : [06942443-c30f-4d51-879d-c21286193435] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-08T14:04:55.593569 #17408] FATAL -- : [06942443-c30f-4d51-879d-c21286193435]   
+F, [2018-04-08T14:04:55.593631 #17408] FATAL -- : [06942443-c30f-4d51-879d-c21286193435] actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[06942443-c30f-4d51-879d-c21286193435] actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[06942443-c30f-4d51-879d-c21286193435] railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+[06942443-c30f-4d51-879d-c21286193435] railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+[06942443-c30f-4d51-879d-c21286193435] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[06942443-c30f-4d51-879d-c21286193435] activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+[06942443-c30f-4d51-879d-c21286193435] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+[06942443-c30f-4d51-879d-c21286193435] railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+[06942443-c30f-4d51-879d-c21286193435] actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[06942443-c30f-4d51-879d-c21286193435] actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[06942443-c30f-4d51-879d-c21286193435] rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+[06942443-c30f-4d51-879d-c21286193435] activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[06942443-c30f-4d51-879d-c21286193435] actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[06942443-c30f-4d51-879d-c21286193435] rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+[06942443-c30f-4d51-879d-c21286193435] rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+[06942443-c30f-4d51-879d-c21286193435] railties (5.1.5) lib/rails/engine.rb:522:in `call'
+[06942443-c30f-4d51-879d-c21286193435] puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+[06942443-c30f-4d51-879d-c21286193435] puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+[06942443-c30f-4d51-879d-c21286193435] puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+[06942443-c30f-4d51-879d-c21286193435] puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+[06942443-c30f-4d51-879d-c21286193435] puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-08T14:04:59.422002 #17408]  INFO -- : [fa2431be-cf25-4c06-9996-9349a4553d5b] Started GET "/" for 127.0.0.1 at 2018-04-08 14:04:59 +0300
+F, [2018-04-08T14:04:59.423384 #17408] FATAL -- : [fa2431be-cf25-4c06-9996-9349a4553d5b]   
+F, [2018-04-08T14:04:59.423522 #17408] FATAL -- : [fa2431be-cf25-4c06-9996-9349a4553d5b] ActionController::RoutingError (No route matches [GET] "/"):
+F, [2018-04-08T14:04:59.423579 #17408] FATAL -- : [fa2431be-cf25-4c06-9996-9349a4553d5b]   
+F, [2018-04-08T14:04:59.423651 #17408] FATAL -- : [fa2431be-cf25-4c06-9996-9349a4553d5b] actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] railties (5.1.5) lib/rails/engine.rb:522:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+[fa2431be-cf25-4c06-9996-9349a4553d5b] puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+I, [2018-04-08T14:05:02.279576 #17408]  INFO -- : [81bb208e-e1cf-417d-92da-2c88f382d781] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:02 +0300
+I, [2018-04-08T14:05:02.281728 #17408]  INFO -- : [81bb208e-e1cf-417d-92da-2c88f382d781] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:02.313886 #17408]  INFO -- : [81bb208e-e1cf-417d-92da-2c88f382d781] Completed 500 Internal Server Error in 32ms (ActiveRecord: 9.4ms)
+F, [2018-04-08T14:05:02.315709 #17408] FATAL -- : [81bb208e-e1cf-417d-92da-2c88f382d781]   
+F, [2018-04-08T14:05:02.315840 #17408] FATAL -- : [81bb208e-e1cf-417d-92da-2c88f382d781] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:02.315898 #17408] FATAL -- : [81bb208e-e1cf-417d-92da-2c88f382d781]   
+F, [2018-04-08T14:05:02.315956 #17408] FATAL -- : [81bb208e-e1cf-417d-92da-2c88f382d781] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:22.298048 #17438]  INFO -- : [442beaf1-5861-4b62-8355-f1233627a577] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:22 +0300
+I, [2018-04-08T14:05:22.303624 #17438]  INFO -- : [442beaf1-5861-4b62-8355-f1233627a577] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:22.335677 #17438]  INFO -- : [442beaf1-5861-4b62-8355-f1233627a577] Completed 500 Internal Server Error in 32ms (ActiveRecord: 10.5ms)
+F, [2018-04-08T14:05:22.337112 #17438] FATAL -- : [442beaf1-5861-4b62-8355-f1233627a577]   
+F, [2018-04-08T14:05:22.337165 #17438] FATAL -- : [442beaf1-5861-4b62-8355-f1233627a577] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:22.337209 #17438] FATAL -- : [442beaf1-5861-4b62-8355-f1233627a577]   
+F, [2018-04-08T14:05:22.337260 #17438] FATAL -- : [442beaf1-5861-4b62-8355-f1233627a577] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:23.169442 #17438]  INFO -- : [40cb1cd2-dcaa-4ffa-824e-e008f1cccea0] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:23 +0300
+I, [2018-04-08T14:05:23.170688 #17438]  INFO -- : [40cb1cd2-dcaa-4ffa-824e-e008f1cccea0] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:23.173096 #17438]  INFO -- : [40cb1cd2-dcaa-4ffa-824e-e008f1cccea0] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms)
+F, [2018-04-08T14:05:23.175019 #17438] FATAL -- : [40cb1cd2-dcaa-4ffa-824e-e008f1cccea0]   
+F, [2018-04-08T14:05:23.175134 #17438] FATAL -- : [40cb1cd2-dcaa-4ffa-824e-e008f1cccea0] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:23.175196 #17438] FATAL -- : [40cb1cd2-dcaa-4ffa-824e-e008f1cccea0]   
+F, [2018-04-08T14:05:23.175257 #17438] FATAL -- : [40cb1cd2-dcaa-4ffa-824e-e008f1cccea0] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:23.852687 #17438]  INFO -- : [d8b26440-99c1-41eb-96e3-f725f26c1ef6] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:23 +0300
+I, [2018-04-08T14:05:23.854403 #17438]  INFO -- : [d8b26440-99c1-41eb-96e3-f725f26c1ef6] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:23.857045 #17438]  INFO -- : [d8b26440-99c1-41eb-96e3-f725f26c1ef6] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms)
+F, [2018-04-08T14:05:23.858861 #17438] FATAL -- : [d8b26440-99c1-41eb-96e3-f725f26c1ef6]   
+F, [2018-04-08T14:05:23.859003 #17438] FATAL -- : [d8b26440-99c1-41eb-96e3-f725f26c1ef6] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:23.859069 #17438] FATAL -- : [d8b26440-99c1-41eb-96e3-f725f26c1ef6]   
+F, [2018-04-08T14:05:23.859132 #17438] FATAL -- : [d8b26440-99c1-41eb-96e3-f725f26c1ef6] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:24.370368 #17438]  INFO -- : [df0cd5ad-45f8-429c-93f3-4d3facb415d6] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:24 +0300
+I, [2018-04-08T14:05:24.371450 #17438]  INFO -- : [df0cd5ad-45f8-429c-93f3-4d3facb415d6] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:24.374301 #17438]  INFO -- : [df0cd5ad-45f8-429c-93f3-4d3facb415d6] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.2ms)
+F, [2018-04-08T14:05:24.376185 #17438] FATAL -- : [df0cd5ad-45f8-429c-93f3-4d3facb415d6]   
+F, [2018-04-08T14:05:24.376332 #17438] FATAL -- : [df0cd5ad-45f8-429c-93f3-4d3facb415d6] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:24.376415 #17438] FATAL -- : [df0cd5ad-45f8-429c-93f3-4d3facb415d6]   
+F, [2018-04-08T14:05:24.376478 #17438] FATAL -- : [df0cd5ad-45f8-429c-93f3-4d3facb415d6] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:24.771983 #17438]  INFO -- : [2e941db2-b7ef-4a1f-8a20-35242bcada05] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:24 +0300
+I, [2018-04-08T14:05:24.772922 #17438]  INFO -- : [2e941db2-b7ef-4a1f-8a20-35242bcada05] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:24.775555 #17438]  INFO -- : [2e941db2-b7ef-4a1f-8a20-35242bcada05] Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.0ms)
+F, [2018-04-08T14:05:24.777310 #17438] FATAL -- : [2e941db2-b7ef-4a1f-8a20-35242bcada05]   
+F, [2018-04-08T14:05:24.777423 #17438] FATAL -- : [2e941db2-b7ef-4a1f-8a20-35242bcada05] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:24.777485 #17438] FATAL -- : [2e941db2-b7ef-4a1f-8a20-35242bcada05]   
+F, [2018-04-08T14:05:24.777542 #17438] FATAL -- : [2e941db2-b7ef-4a1f-8a20-35242bcada05] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:24.787879 #17438]  INFO -- : [faf04dec-94b9-4702-a62c-f3dbfccff33e] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:24 +0300
+I, [2018-04-08T14:05:24.789037 #17438]  INFO -- : [faf04dec-94b9-4702-a62c-f3dbfccff33e] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:24.791679 #17438]  INFO -- : [faf04dec-94b9-4702-a62c-f3dbfccff33e] Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.1ms)
+F, [2018-04-08T14:05:24.793465 #17438] FATAL -- : [faf04dec-94b9-4702-a62c-f3dbfccff33e]   
+F, [2018-04-08T14:05:24.793624 #17438] FATAL -- : [faf04dec-94b9-4702-a62c-f3dbfccff33e] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:24.793704 #17438] FATAL -- : [faf04dec-94b9-4702-a62c-f3dbfccff33e]   
+F, [2018-04-08T14:05:24.793810 #17438] FATAL -- : [faf04dec-94b9-4702-a62c-f3dbfccff33e] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:25.180746 #17438]  INFO -- : [90b6d42d-43e1-43f4-ac52-86bd2394941e] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:25 +0300
+I, [2018-04-08T14:05:25.181706 #17438]  INFO -- : [90b6d42d-43e1-43f4-ac52-86bd2394941e] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:25.184637 #17438]  INFO -- : [90b6d42d-43e1-43f4-ac52-86bd2394941e] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.1ms)
+F, [2018-04-08T14:05:25.186887 #17438] FATAL -- : [90b6d42d-43e1-43f4-ac52-86bd2394941e]   
+F, [2018-04-08T14:05:25.187065 #17438] FATAL -- : [90b6d42d-43e1-43f4-ac52-86bd2394941e] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:25.187158 #17438] FATAL -- : [90b6d42d-43e1-43f4-ac52-86bd2394941e]   
+F, [2018-04-08T14:05:25.187228 #17438] FATAL -- : [90b6d42d-43e1-43f4-ac52-86bd2394941e] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:26.284519 #17438]  INFO -- : [bcefe3cf-8424-4f1b-bd99-793e40f16210] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:26 +0300
+I, [2018-04-08T14:05:26.285590 #17438]  INFO -- : [bcefe3cf-8424-4f1b-bd99-793e40f16210] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:26.288674 #17438]  INFO -- : [bcefe3cf-8424-4f1b-bd99-793e40f16210] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.2ms)
+F, [2018-04-08T14:05:26.290643 #17438] FATAL -- : [bcefe3cf-8424-4f1b-bd99-793e40f16210]   
+F, [2018-04-08T14:05:26.290737 #17438] FATAL -- : [bcefe3cf-8424-4f1b-bd99-793e40f16210] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:26.290825 #17438] FATAL -- : [bcefe3cf-8424-4f1b-bd99-793e40f16210]   
+F, [2018-04-08T14:05:26.290908 #17438] FATAL -- : [bcefe3cf-8424-4f1b-bd99-793e40f16210] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:26.737271 #17438]  INFO -- : [243bb1ae-1667-4085-be42-6c4a9ca2eabf] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:26 +0300
+I, [2018-04-08T14:05:26.739580 #17438]  INFO -- : [243bb1ae-1667-4085-be42-6c4a9ca2eabf] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:26.744248 #17438]  INFO -- : [243bb1ae-1667-4085-be42-6c4a9ca2eabf] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.9ms)
+F, [2018-04-08T14:05:26.747028 #17438] FATAL -- : [243bb1ae-1667-4085-be42-6c4a9ca2eabf]   
+F, [2018-04-08T14:05:26.747192 #17438] FATAL -- : [243bb1ae-1667-4085-be42-6c4a9ca2eabf] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:26.747263 #17438] FATAL -- : [243bb1ae-1667-4085-be42-6c4a9ca2eabf]   
+F, [2018-04-08T14:05:26.747320 #17438] FATAL -- : [243bb1ae-1667-4085-be42-6c4a9ca2eabf] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:27.024761 #17438]  INFO -- : [893d5b06-b777-4c48-a7cc-5319e1744918] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:27 +0300
+I, [2018-04-08T14:05:27.026986 #17438]  INFO -- : [893d5b06-b777-4c48-a7cc-5319e1744918] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:27.030445 #17438]  INFO -- : [893d5b06-b777-4c48-a7cc-5319e1744918] Completed 500 Internal Server Error in 3ms (ActiveRecord: 2.0ms)
+F, [2018-04-08T14:05:27.033119 #17438] FATAL -- : [893d5b06-b777-4c48-a7cc-5319e1744918]   
+F, [2018-04-08T14:05:27.033264 #17438] FATAL -- : [893d5b06-b777-4c48-a7cc-5319e1744918] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:27.033332 #17438] FATAL -- : [893d5b06-b777-4c48-a7cc-5319e1744918]   
+F, [2018-04-08T14:05:27.033392 #17438] FATAL -- : [893d5b06-b777-4c48-a7cc-5319e1744918] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:27.329456 #17438]  INFO -- : [79532670-b5ba-487d-8be4-18c34f907b50] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:27 +0300
+I, [2018-04-08T14:05:27.330500 #17438]  INFO -- : [79532670-b5ba-487d-8be4-18c34f907b50] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:27.333902 #17438]  INFO -- : [79532670-b5ba-487d-8be4-18c34f907b50] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.9ms)
+F, [2018-04-08T14:05:27.337398 #17438] FATAL -- : [79532670-b5ba-487d-8be4-18c34f907b50]   
+F, [2018-04-08T14:05:27.337555 #17438] FATAL -- : [79532670-b5ba-487d-8be4-18c34f907b50] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:27.337631 #17438] FATAL -- : [79532670-b5ba-487d-8be4-18c34f907b50]   
+F, [2018-04-08T14:05:27.337696 #17438] FATAL -- : [79532670-b5ba-487d-8be4-18c34f907b50] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:27.651044 #17438]  INFO -- : [2fcad764-df33-4c63-a8a6-422a7afe6a79] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:27 +0300
+I, [2018-04-08T14:05:27.651954 #17438]  INFO -- : [2fcad764-df33-4c63-a8a6-422a7afe6a79] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:27.656144 #17438]  INFO -- : [2fcad764-df33-4c63-a8a6-422a7afe6a79] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms)
+F, [2018-04-08T14:05:27.658880 #17438] FATAL -- : [2fcad764-df33-4c63-a8a6-422a7afe6a79]   
+F, [2018-04-08T14:05:27.659026 #17438] FATAL -- : [2fcad764-df33-4c63-a8a6-422a7afe6a79] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:27.659092 #17438] FATAL -- : [2fcad764-df33-4c63-a8a6-422a7afe6a79]   
+F, [2018-04-08T14:05:27.659147 #17438] FATAL -- : [2fcad764-df33-4c63-a8a6-422a7afe6a79] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:27.684660 #17438]  INFO -- : [1a6214d8-0a91-4006-a2cc-f40551aa89de] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:27 +0300
+I, [2018-04-08T14:05:27.685397 #17438]  INFO -- : [1a6214d8-0a91-4006-a2cc-f40551aa89de] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:27.688755 #17438]  INFO -- : [1a6214d8-0a91-4006-a2cc-f40551aa89de] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.9ms)
+F, [2018-04-08T14:05:27.691527 #17438] FATAL -- : [1a6214d8-0a91-4006-a2cc-f40551aa89de]   
+F, [2018-04-08T14:05:27.691692 #17438] FATAL -- : [1a6214d8-0a91-4006-a2cc-f40551aa89de] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:27.691770 #17438] FATAL -- : [1a6214d8-0a91-4006-a2cc-f40551aa89de]   
+F, [2018-04-08T14:05:27.691834 #17438] FATAL -- : [1a6214d8-0a91-4006-a2cc-f40551aa89de] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:05:27.974787 #17438]  INFO -- : [8015e9a3-2a96-4d3b-b348-ce618351b9da] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:05:27 +0300
+I, [2018-04-08T14:05:27.975758 #17438]  INFO -- : [8015e9a3-2a96-4d3b-b348-ce618351b9da] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:05:27.979152 #17438]  INFO -- : [8015e9a3-2a96-4d3b-b348-ce618351b9da] Completed 500 Internal Server Error in 3ms (ActiveRecord: 2.0ms)
+F, [2018-04-08T14:05:27.981954 #17438] FATAL -- : [8015e9a3-2a96-4d3b-b348-ce618351b9da]   
+F, [2018-04-08T14:05:27.982108 #17438] FATAL -- : [8015e9a3-2a96-4d3b-b348-ce618351b9da] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:05:27.982182 #17438] FATAL -- : [8015e9a3-2a96-4d3b-b348-ce618351b9da]   
+F, [2018-04-08T14:05:27.982245 #17438] FATAL -- : [8015e9a3-2a96-4d3b-b348-ce618351b9da] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:07:16.069957 #17438]  INFO -- : [03009236-c46f-4b09-a363-bc221da9e971] Started GET "/api/currencies/currency_reserves.json" for 127.0.0.1 at 2018-04-08 14:07:16 +0300
+I, [2018-04-08T14:07:16.070868 #17438]  INFO -- : [03009236-c46f-4b09-a363-bc221da9e971] Processing by Api::CurrenciesController#currency_reserves as JSON
+I, [2018-04-08T14:07:16.074131 #17438]  INFO -- : [03009236-c46f-4b09-a363-bc221da9e971] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
+F, [2018-04-08T14:07:16.076758 #17438] FATAL -- : [03009236-c46f-4b09-a363-bc221da9e971]   
+F, [2018-04-08T14:07:16.076898 #17438] FATAL -- : [03009236-c46f-4b09-a363-bc221da9e971] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:07:16.077042 #17438] FATAL -- : [03009236-c46f-4b09-a363-bc221da9e971]   
+F, [2018-04-08T14:07:16.077123 #17438] FATAL -- : [03009236-c46f-4b09-a363-bc221da9e971] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:04.450513 #17915]  INFO -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:04 +0300
+I, [2018-04-08T14:09:04.455544 #17915]  INFO -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:04.459259 #17915]  INFO -- : [2dff9fd9-9e71-4e82-b37c-f234ae1c60f0] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:04 +0300
+I, [2018-04-08T14:09:04.460163 #17915]  INFO -- : [2dff9fd9-9e71-4e82-b37c-f234ae1c60f0] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:09:04.489525 #17915] DEBUG -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f]   [1m[36mCurrency Load (0.7ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:04.490105 #17915]  INFO -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f] Completed 500 Internal Server Error in 34ms (ActiveRecord: 13.7ms)
+F, [2018-04-08T14:09:04.491762 #17915] FATAL -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f]   
+F, [2018-04-08T14:09:04.491925 #17915] FATAL -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:04.491983 #17915] FATAL -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f]   
+F, [2018-04-08T14:09:04.492076 #17915] FATAL -- : [98c74834-7c4f-4bb0-b9c0-153b793f214f] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:04.493432 #17915]  INFO -- : [2dff9fd9-9e71-4e82-b37c-f234ae1c60f0] Completed 500 Internal Server Error in 33ms (ActiveRecord: 16.1ms)
+F, [2018-04-08T14:09:04.494885 #17915] FATAL -- : [2dff9fd9-9e71-4e82-b37c-f234ae1c60f0]   
+F, [2018-04-08T14:09:04.495000 #17915] FATAL -- : [2dff9fd9-9e71-4e82-b37c-f234ae1c60f0] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:04.495063 #17915] FATAL -- : [2dff9fd9-9e71-4e82-b37c-f234ae1c60f0]   
+F, [2018-04-08T14:09:04.495120 #17915] FATAL -- : [2dff9fd9-9e71-4e82-b37c-f234ae1c60f0] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:05.935588 #17915]  INFO -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:05 +0300
+I, [2018-04-08T14:09:05.936508 #17915]  INFO -- : [eef7f7c1-5a7b-4883-b035-0be7f5517086] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:05 +0300
+I, [2018-04-08T14:09:05.938220 #17915]  INFO -- : [eef7f7c1-5a7b-4883-b035-0be7f5517086] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:09:05.937372 #17915]  INFO -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:05.942506 #17915]  INFO -- : [eef7f7c1-5a7b-4883-b035-0be7f5517086] Completed 500 Internal Server Error in 4ms (ActiveRecord: 2.1ms)
+F, [2018-04-08T14:09:05.944248 #17915] FATAL -- : [eef7f7c1-5a7b-4883-b035-0be7f5517086]   
+F, [2018-04-08T14:09:05.944369 #17915] FATAL -- : [eef7f7c1-5a7b-4883-b035-0be7f5517086] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:05.944429 #17915] FATAL -- : [eef7f7c1-5a7b-4883-b035-0be7f5517086]   
+F, [2018-04-08T14:09:05.944486 #17915] FATAL -- : [eef7f7c1-5a7b-4883-b035-0be7f5517086] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+D, [2018-04-08T14:09:05.945678 #17915] DEBUG -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9]   [1m[36mCurrency Load (5.2ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:05.945978 #17915]  INFO -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9] Completed 500 Internal Server Error in 7ms (ActiveRecord: 5.2ms)
+F, [2018-04-08T14:09:05.947500 #17915] FATAL -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9]   
+F, [2018-04-08T14:09:05.947586 #17915] FATAL -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:05.947643 #17915] FATAL -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9]   
+F, [2018-04-08T14:09:05.947698 #17915] FATAL -- : [dc445f5b-795f-4c3a-b689-6f4c6d6328d9] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:06.910484 #17915]  INFO -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:06 +0300
+I, [2018-04-08T14:09:06.911735 #17915]  INFO -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe] Processing by Api::CurrenciesController#currency_list as HTML
+D, [2018-04-08T14:09:06.914456 #17915] DEBUG -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe]   [1m[36mCurrency Load (1.1ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:06.914892 #17915]  INFO -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.1ms)
+F, [2018-04-08T14:09:06.916289 #17915] FATAL -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe]   
+F, [2018-04-08T14:09:06.916431 #17915] FATAL -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:06.916505 #17915] FATAL -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe]   
+F, [2018-04-08T14:09:06.916565 #17915] FATAL -- : [d7ee5cd1-5eff-44f2-aeca-e51bebffdbfe] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:06.921879 #17915]  INFO -- : [fbf9f799-003a-4ebb-8ba2-dfb56761d397] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:06 +0300
+I, [2018-04-08T14:09:06.922776 #17915]  INFO -- : [fbf9f799-003a-4ebb-8ba2-dfb56761d397] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:09:06.925324 #17915]  INFO -- : [fbf9f799-003a-4ebb-8ba2-dfb56761d397] Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.8ms)
+F, [2018-04-08T14:09:06.926943 #17915] FATAL -- : [fbf9f799-003a-4ebb-8ba2-dfb56761d397]   
+F, [2018-04-08T14:09:06.927044 #17915] FATAL -- : [fbf9f799-003a-4ebb-8ba2-dfb56761d397] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:06.927107 #17915] FATAL -- : [fbf9f799-003a-4ebb-8ba2-dfb56761d397]   
+F, [2018-04-08T14:09:06.927166 #17915] FATAL -- : [fbf9f799-003a-4ebb-8ba2-dfb56761d397] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:32.121884 #18023]  INFO -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:32 +0300
+I, [2018-04-08T14:09:32.127964 #18023]  INFO -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:32.133143 #18023]  INFO -- : [82f34dd8-a534-4db5-85ac-f04bf6d230f3] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:32 +0300
+I, [2018-04-08T14:09:32.134076 #18023]  INFO -- : [82f34dd8-a534-4db5-85ac-f04bf6d230f3] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:09:32.159678 #18023] DEBUG -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e]   [1m[36mCurrency Load (4.2ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:32.160052 #18023]  INFO -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e] Completed 500 Internal Server Error in 32ms (ActiveRecord: 14.6ms)
+F, [2018-04-08T14:09:32.161388 #18023] FATAL -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e]   
+F, [2018-04-08T14:09:32.161494 #18023] FATAL -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:32.161565 #18023] FATAL -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e]   
+F, [2018-04-08T14:09:32.162953 #18023] FATAL -- : [3a3b236e-6bb3-4b6b-a5a1-0ea964c8e41e] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:32.164814 #18023]  INFO -- : [82f34dd8-a534-4db5-85ac-f04bf6d230f3] Completed 500 Internal Server Error in 31ms (ActiveRecord: 11.5ms)
+F, [2018-04-08T14:09:32.166453 #18023] FATAL -- : [82f34dd8-a534-4db5-85ac-f04bf6d230f3]   
+F, [2018-04-08T14:09:32.166528 #18023] FATAL -- : [82f34dd8-a534-4db5-85ac-f04bf6d230f3] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:32.166583 #18023] FATAL -- : [82f34dd8-a534-4db5-85ac-f04bf6d230f3]   
+F, [2018-04-08T14:09:32.166727 #18023] FATAL -- : [82f34dd8-a534-4db5-85ac-f04bf6d230f3] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:33.102359 #18023]  INFO -- : [5fa13fca-397e-4349-991c-70cf13c052ea] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:33 +0300
+I, [2018-04-08T14:09:33.103431 #18023]  INFO -- : [5fa13fca-397e-4349-991c-70cf13c052ea] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:33.105395 #18023]  INFO -- : [acfd249a-92ed-4bcf-8b6c-26a551c9e3c4] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:33 +0300
+I, [2018-04-08T14:09:33.106380 #18023]  INFO -- : [acfd249a-92ed-4bcf-8b6c-26a551c9e3c4] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:09:33.107569 #18023] DEBUG -- : [5fa13fca-397e-4349-991c-70cf13c052ea]   [1m[36mCurrency Load (2.9ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:33.107862 #18023]  INFO -- : [5fa13fca-397e-4349-991c-70cf13c052ea] Completed 500 Internal Server Error in 4ms (ActiveRecord: 2.9ms)
+F, [2018-04-08T14:09:33.109356 #18023] FATAL -- : [5fa13fca-397e-4349-991c-70cf13c052ea]   
+F, [2018-04-08T14:09:33.109481 #18023] FATAL -- : [5fa13fca-397e-4349-991c-70cf13c052ea] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:33.109592 #18023] FATAL -- : [5fa13fca-397e-4349-991c-70cf13c052ea]   
+F, [2018-04-08T14:09:33.109658 #18023] FATAL -- : [5fa13fca-397e-4349-991c-70cf13c052ea] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:33.112312 #18023]  INFO -- : [acfd249a-92ed-4bcf-8b6c-26a551c9e3c4] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms)
+F, [2018-04-08T14:09:33.113883 #18023] FATAL -- : [acfd249a-92ed-4bcf-8b6c-26a551c9e3c4]   
+F, [2018-04-08T14:09:33.113990 #18023] FATAL -- : [acfd249a-92ed-4bcf-8b6c-26a551c9e3c4] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:33.114053 #18023] FATAL -- : [acfd249a-92ed-4bcf-8b6c-26a551c9e3c4]   
+F, [2018-04-08T14:09:33.114096 #18023] FATAL -- : [acfd249a-92ed-4bcf-8b6c-26a551c9e3c4] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:33.909201 #18023]  INFO -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:33 +0300
+I, [2018-04-08T14:09:33.910277 #18023]  INFO -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:33.911352 #18023]  INFO -- : [3d8bebd1-a705-43f3-b2d5-bd58e94539ad] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:33 +0300
+I, [2018-04-08T14:09:33.912227 #18023]  INFO -- : [3d8bebd1-a705-43f3-b2d5-bd58e94539ad] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:09:33.914172 #18023] DEBUG -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888]   [1m[36mCurrency Load (1.3ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:33.914544 #18023]  INFO -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.3ms)
+F, [2018-04-08T14:09:33.916265 #18023] FATAL -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888]   
+F, [2018-04-08T14:09:33.916345 #18023] FATAL -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:33.916398 #18023] FATAL -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888]   
+F, [2018-04-08T14:09:33.916492 #18023] FATAL -- : [8e6efff0-0a86-466d-bc89-6514e4b7a888] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:33.918763 #18023]  INFO -- : [3d8bebd1-a705-43f3-b2d5-bd58e94539ad] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms)
+F, [2018-04-08T14:09:33.920384 #18023] FATAL -- : [3d8bebd1-a705-43f3-b2d5-bd58e94539ad]   
+F, [2018-04-08T14:09:33.920514 #18023] FATAL -- : [3d8bebd1-a705-43f3-b2d5-bd58e94539ad] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:33.920611 #18023] FATAL -- : [3d8bebd1-a705-43f3-b2d5-bd58e94539ad]   
+F, [2018-04-08T14:09:33.920672 #18023] FATAL -- : [3d8bebd1-a705-43f3-b2d5-bd58e94539ad] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:34.251549 #18023]  INFO -- : [774f0ca0-e756-4ba0-a231-7aac285b4584] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:34 +0300
+I, [2018-04-08T14:09:34.253275 #18023]  INFO -- : [774f0ca0-e756-4ba0-a231-7aac285b4584] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:34.252240 #18023]  INFO -- : [29c904f7-f703-4ed0-af61-5f8c3ad2a347] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:34 +0300
+I, [2018-04-08T14:09:34.254779 #18023]  INFO -- : [29c904f7-f703-4ed0-af61-5f8c3ad2a347] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:09:34.256460 #18023] DEBUG -- : [774f0ca0-e756-4ba0-a231-7aac285b4584]   [1m[36mCurrency Load (0.6ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:34.256835 #18023]  INFO -- : [774f0ca0-e756-4ba0-a231-7aac285b4584] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.6ms)
+F, [2018-04-08T14:09:34.258725 #18023] FATAL -- : [774f0ca0-e756-4ba0-a231-7aac285b4584]   
+F, [2018-04-08T14:09:34.258842 #18023] FATAL -- : [774f0ca0-e756-4ba0-a231-7aac285b4584] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:34.258917 #18023] FATAL -- : [774f0ca0-e756-4ba0-a231-7aac285b4584]   
+F, [2018-04-08T14:09:34.258989 #18023] FATAL -- : [774f0ca0-e756-4ba0-a231-7aac285b4584] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:34.263417 #18023]  INFO -- : [29c904f7-f703-4ed0-af61-5f8c3ad2a347] Completed 500 Internal Server Error in 8ms (ActiveRecord: 3.0ms)
+F, [2018-04-08T14:09:34.266098 #18023] FATAL -- : [29c904f7-f703-4ed0-af61-5f8c3ad2a347]   
+F, [2018-04-08T14:09:34.266236 #18023] FATAL -- : [29c904f7-f703-4ed0-af61-5f8c3ad2a347] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:34.266296 #18023] FATAL -- : [29c904f7-f703-4ed0-af61-5f8c3ad2a347]   
+F, [2018-04-08T14:09:34.266353 #18023] FATAL -- : [29c904f7-f703-4ed0-af61-5f8c3ad2a347] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:35.279295 #18023]  INFO -- : [a677034d-7a72-40b3-99ce-ed92855acd53] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:35 +0300
+I, [2018-04-08T14:09:35.280376 #18023]  INFO -- : [a677034d-7a72-40b3-99ce-ed92855acd53] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:35.282458 #18023]  INFO -- : [db4091a6-445f-48fb-bc69-5eb0a4a10cfd] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:35 +0300
+I, [2018-04-08T14:09:35.284871 #18023]  INFO -- : [db4091a6-445f-48fb-bc69-5eb0a4a10cfd] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:09:35.286123 #18023] DEBUG -- : [a677034d-7a72-40b3-99ce-ed92855acd53]   [1m[36mCurrency Load (3.1ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:35.287077 #18023]  INFO -- : [a677034d-7a72-40b3-99ce-ed92855acd53] Completed 500 Internal Server Error in 6ms (ActiveRecord: 3.1ms)
+F, [2018-04-08T14:09:35.289724 #18023] FATAL -- : [a677034d-7a72-40b3-99ce-ed92855acd53]   
+F, [2018-04-08T14:09:35.289880 #18023] FATAL -- : [a677034d-7a72-40b3-99ce-ed92855acd53] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:35.289954 #18023] FATAL -- : [a677034d-7a72-40b3-99ce-ed92855acd53]   
+F, [2018-04-08T14:09:35.290023 #18023] FATAL -- : [a677034d-7a72-40b3-99ce-ed92855acd53] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:35.292791 #18023]  INFO -- : [db4091a6-445f-48fb-bc69-5eb0a4a10cfd] Completed 500 Internal Server Error in 8ms (ActiveRecord: 5.8ms)
+F, [2018-04-08T14:09:35.295415 #18023] FATAL -- : [db4091a6-445f-48fb-bc69-5eb0a4a10cfd]   
+F, [2018-04-08T14:09:35.296024 #18023] FATAL -- : [db4091a6-445f-48fb-bc69-5eb0a4a10cfd] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:35.296182 #18023] FATAL -- : [db4091a6-445f-48fb-bc69-5eb0a4a10cfd]   
+F, [2018-04-08T14:09:35.296245 #18023] FATAL -- : [db4091a6-445f-48fb-bc69-5eb0a4a10cfd] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:09:35.587351 #18023]  INFO -- : [40c44966-95cb-4985-94b3-2e538656d9d8] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:35 +0300
+I, [2018-04-08T14:09:35.588194 #18023]  INFO -- : [40c44966-95cb-4985-94b3-2e538656d9d8] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:09:35.589758 #18023]  INFO -- : [6835e47b-fc08-42c6-8fdb-61e4a1df14c0] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:35 +0300
+I, [2018-04-08T14:09:35.591146 #18023]  INFO -- : [6835e47b-fc08-42c6-8fdb-61e4a1df14c0] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:09:35.594390 #18023]  INFO -- : [6835e47b-fc08-42c6-8fdb-61e4a1df14c0] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.8ms)
+F, [2018-04-08T14:09:35.597087 #18023] FATAL -- : [6835e47b-fc08-42c6-8fdb-61e4a1df14c0]   
+F, [2018-04-08T14:09:35.597882 #18023] FATAL -- : [6835e47b-fc08-42c6-8fdb-61e4a1df14c0] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:35.597981 #18023] FATAL -- : [6835e47b-fc08-42c6-8fdb-61e4a1df14c0]   
+F, [2018-04-08T14:09:35.598046 #18023] FATAL -- : [6835e47b-fc08-42c6-8fdb-61e4a1df14c0] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+D, [2018-04-08T14:09:35.597727 #18023] DEBUG -- : [40c44966-95cb-4985-94b3-2e538656d9d8]   [1m[36mCurrency Load (3.9ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:35.599017 #18023]  INFO -- : [40c44966-95cb-4985-94b3-2e538656d9d8] Completed 500 Internal Server Error in 9ms (ActiveRecord: 3.9ms)
+F, [2018-04-08T14:09:35.601429 #18023] FATAL -- : [40c44966-95cb-4985-94b3-2e538656d9d8]   
+F, [2018-04-08T14:09:35.601572 #18023] FATAL -- : [40c44966-95cb-4985-94b3-2e538656d9d8] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:35.601626 #18023] FATAL -- : [40c44966-95cb-4985-94b3-2e538656d9d8]   
+F, [2018-04-08T14:09:35.601686 #18023] FATAL -- : [40c44966-95cb-4985-94b3-2e538656d9d8] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:36.292705 #18023]  INFO -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:09:36 +0300
+I, [2018-04-08T14:09:36.293597 #18023]  INFO -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06] Processing by Api::CurrenciesController#currency_list as HTML
+D, [2018-04-08T14:09:36.296786 #18023] DEBUG -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06]   [1m[36mCurrency Load (0.7ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:09:36.297124 #18023]  INFO -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.7ms)
+F, [2018-04-08T14:09:36.299652 #18023] FATAL -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06]   
+F, [2018-04-08T14:09:36.299830 #18023] FATAL -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:09:36.299891 #18023] FATAL -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06]   
+F, [2018-04-08T14:09:36.299951 #18023] FATAL -- : [c2c046db-f6fa-445e-a998-9f14be1a1e06] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:09:36.303107 #18023]  INFO -- : [1b39be1c-832e-41bf-9d3f-fb35de1ff94d] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:09:36 +0300
+I, [2018-04-08T14:09:36.305111 #18023]  INFO -- : [1b39be1c-832e-41bf-9d3f-fb35de1ff94d] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:09:36.308164 #18023]  INFO -- : [1b39be1c-832e-41bf-9d3f-fb35de1ff94d] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.5ms)
+F, [2018-04-08T14:09:36.311375 #18023] FATAL -- : [1b39be1c-832e-41bf-9d3f-fb35de1ff94d]   
+F, [2018-04-08T14:09:36.311530 #18023] FATAL -- : [1b39be1c-832e-41bf-9d3f-fb35de1ff94d] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:09:36.311601 #18023] FATAL -- : [1b39be1c-832e-41bf-9d3f-fb35de1ff94d]   
+F, [2018-04-08T14:09:36.311666 #18023] FATAL -- : [1b39be1c-832e-41bf-9d3f-fb35de1ff94d] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:11:42.506055 #18023]  INFO -- : [d1b94374-8e4a-4460-aadc-bfa151e777f9] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:11:42 +0300
+I, [2018-04-08T14:11:42.508471 #18023]  INFO -- : [d1b94374-8e4a-4460-aadc-bfa151e777f9] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:11:42.509182 #18023]  INFO -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:11:42 +0300
+I, [2018-04-08T14:11:42.511730 #18023]  INFO -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:11:42.513494 #18023]  INFO -- : [d1b94374-8e4a-4460-aadc-bfa151e777f9] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.0ms)
+F, [2018-04-08T14:11:42.516214 #18023] FATAL -- : [d1b94374-8e4a-4460-aadc-bfa151e777f9]   
+F, [2018-04-08T14:11:42.516435 #18023] FATAL -- : [d1b94374-8e4a-4460-aadc-bfa151e777f9] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:11:42.517195 #18023] FATAL -- : [d1b94374-8e4a-4460-aadc-bfa151e777f9]   
+F, [2018-04-08T14:11:42.517328 #18023] FATAL -- : [d1b94374-8e4a-4460-aadc-bfa151e777f9] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+D, [2018-04-08T14:11:42.517011 #18023] DEBUG -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178]   [1m[36mCurrency Load (3.0ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:11:42.519155 #18023]  INFO -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178] Completed 500 Internal Server Error in 7ms (ActiveRecord: 3.0ms)
+F, [2018-04-08T14:11:42.521466 #18023] FATAL -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178]   
+F, [2018-04-08T14:11:42.521609 #18023] FATAL -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:11:42.521652 #18023] FATAL -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178]   
+F, [2018-04-08T14:11:42.521695 #18023] FATAL -- : [f00f6459-8ddf-4edb-a4d6-7e0335062178] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:11:42.882164 #18023]  INFO -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:11:42 +0300
+I, [2018-04-08T14:11:42.884367 #18023]  INFO -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:11:42.885237 #18023]  INFO -- : [f3b9693d-10cb-4c11-b3b7-975612f42fca] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:11:42 +0300
+I, [2018-04-08T14:11:42.888109 #18023]  INFO -- : [f3b9693d-10cb-4c11-b3b7-975612f42fca] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:11:42.889973 #18023] DEBUG -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f]   [1m[36mCurrency Load (1.3ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:11:42.892574 #18023]  INFO -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f] Completed 500 Internal Server Error in 7ms (ActiveRecord: 1.3ms)
+F, [2018-04-08T14:11:42.894163 #18023] FATAL -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f]   
+F, [2018-04-08T14:11:42.894293 #18023] FATAL -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:11:42.894352 #18023] FATAL -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f]   
+F, [2018-04-08T14:11:42.895688 #18023] FATAL -- : [d4a8bb18-7de3-493b-9d76-76e1d7f7002f] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:11:42.896404 #18023]  INFO -- : [f3b9693d-10cb-4c11-b3b7-975612f42fca] Completed 500 Internal Server Error in 7ms (ActiveRecord: 5.6ms)
+F, [2018-04-08T14:11:42.898911 #18023] FATAL -- : [f3b9693d-10cb-4c11-b3b7-975612f42fca]   
+F, [2018-04-08T14:11:42.899393 #18023] FATAL -- : [f3b9693d-10cb-4c11-b3b7-975612f42fca] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:11:42.899470 #18023] FATAL -- : [f3b9693d-10cb-4c11-b3b7-975612f42fca]   
+F, [2018-04-08T14:11:42.899522 #18023] FATAL -- : [f3b9693d-10cb-4c11-b3b7-975612f42fca] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:11:43.156430 #18023]  INFO -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:11:43 +0300
+I, [2018-04-08T14:11:43.158270 #18023]  INFO -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:11:43.159757 #18023]  INFO -- : [13153070-a8e9-4fb2-9f58-b24b0dc3e016] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:11:43 +0300
+I, [2018-04-08T14:11:43.161928 #18023]  INFO -- : [13153070-a8e9-4fb2-9f58-b24b0dc3e016] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:11:43.162524 #18023] DEBUG -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076]   [1m[36mCurrency Load (2.3ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:11:43.164375 #18023]  INFO -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076] Completed 500 Internal Server Error in 6ms (ActiveRecord: 2.3ms)
+F, [2018-04-08T14:11:43.167459 #18023] FATAL -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076]   
+F, [2018-04-08T14:11:43.167634 #18023] FATAL -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:11:43.167707 #18023] FATAL -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076]   
+F, [2018-04-08T14:11:43.167820 #18023] FATAL -- : [a29c9ff1-5f1d-4b0e-aa21-4870bdc69076] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:11:43.168566 #18023]  INFO -- : [13153070-a8e9-4fb2-9f58-b24b0dc3e016] Completed 500 Internal Server Error in 6ms (ActiveRecord: 3.4ms)
+F, [2018-04-08T14:11:43.170762 #18023] FATAL -- : [13153070-a8e9-4fb2-9f58-b24b0dc3e016]   
+F, [2018-04-08T14:11:43.171084 #18023] FATAL -- : [13153070-a8e9-4fb2-9f58-b24b0dc3e016] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:11:43.171499 #18023] FATAL -- : [13153070-a8e9-4fb2-9f58-b24b0dc3e016]   
+F, [2018-04-08T14:11:43.171571 #18023] FATAL -- : [13153070-a8e9-4fb2-9f58-b24b0dc3e016] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:11:43.503784 #18023]  INFO -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:11:43 +0300
+I, [2018-04-08T14:11:43.504945 #18023]  INFO -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:11:43.506181 #18023]  INFO -- : [114c9e1b-4db9-491b-8460-b5e481140816] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:11:43 +0300
+I, [2018-04-08T14:11:43.507418 #18023]  INFO -- : [114c9e1b-4db9-491b-8460-b5e481140816] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:11:43.508770 #18023] DEBUG -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422]   [1m[36mCurrency Load (2.2ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:11:43.509384 #18023]  INFO -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422] Completed 500 Internal Server Error in 4ms (ActiveRecord: 2.2ms)
+F, [2018-04-08T14:11:43.510515 #18023] FATAL -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422]   
+F, [2018-04-08T14:11:43.510637 #18023] FATAL -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:11:43.510723 #18023] FATAL -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422]   
+F, [2018-04-08T14:11:43.511247 #18023] FATAL -- : [73d8445f-e0d0-4ff5-a65a-8be64451f422] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:11:43.511162 #18023]  INFO -- : [114c9e1b-4db9-491b-8460-b5e481140816] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.8ms)
+F, [2018-04-08T14:11:43.513240 #18023] FATAL -- : [114c9e1b-4db9-491b-8460-b5e481140816]   
+F, [2018-04-08T14:11:43.513343 #18023] FATAL -- : [114c9e1b-4db9-491b-8460-b5e481140816] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:11:43.513415 #18023] FATAL -- : [114c9e1b-4db9-491b-8460-b5e481140816]   
+F, [2018-04-08T14:11:43.513474 #18023] FATAL -- : [114c9e1b-4db9-491b-8460-b5e481140816] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:11:43.783722 #18023]  INFO -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:11:43 +0300
+I, [2018-04-08T14:11:43.784610 #18023]  INFO -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:11:43.785682 #18023]  INFO -- : [e5364bc7-ebd2-48e9-87d5-95578da03d9a] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:11:43 +0300
+I, [2018-04-08T14:11:43.787211 #18023]  INFO -- : [e5364bc7-ebd2-48e9-87d5-95578da03d9a] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:11:43.789536 #18023] DEBUG -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a]   [1m[36mCurrency Load (1.1ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:11:43.789903 #18023]  INFO -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a] Completed 500 Internal Server Error in 4ms (ActiveRecord: 1.1ms)
+F, [2018-04-08T14:11:43.792359 #18023] FATAL -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a]   
+F, [2018-04-08T14:11:43.792477 #18023] FATAL -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:11:43.792526 #18023] FATAL -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a]   
+F, [2018-04-08T14:11:43.792593 #18023] FATAL -- : [f66822cc-a6c8-48ad-a580-2beb0cbc246a] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:11:43.790641 #18023]  INFO -- : [e5364bc7-ebd2-48e9-87d5-95578da03d9a] Completed 500 Internal Server Error in 3ms (ActiveRecord: 1.5ms)
+F, [2018-04-08T14:11:43.795265 #18023] FATAL -- : [e5364bc7-ebd2-48e9-87d5-95578da03d9a]   
+F, [2018-04-08T14:11:43.795403 #18023] FATAL -- : [e5364bc7-ebd2-48e9-87d5-95578da03d9a] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:11:43.795460 #18023] FATAL -- : [e5364bc7-ebd2-48e9-87d5-95578da03d9a]   
+F, [2018-04-08T14:11:43.795514 #18023] FATAL -- : [e5364bc7-ebd2-48e9-87d5-95578da03d9a] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+I, [2018-04-08T14:11:45.027579 #18023]  INFO -- : [856ccf8f-af4f-494f-b665-6544e8803c6a] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:11:45 +0300
+I, [2018-04-08T14:11:45.028707 #18023]  INFO -- : [856ccf8f-af4f-494f-b665-6544e8803c6a] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:11:45.030454 #18023]  INFO -- : [b32d3f79-a4fb-4565-a8ed-a910eee78908] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:11:45 +0300
+I, [2018-04-08T14:11:45.031419 #18023]  INFO -- : [b32d3f79-a4fb-4565-a8ed-a910eee78908] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:11:45.032070 #18023] DEBUG -- : [856ccf8f-af4f-494f-b665-6544e8803c6a]   [1m[36mCurrency Load (2.0ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:11:45.032963 #18023]  INFO -- : [856ccf8f-af4f-494f-b665-6544e8803c6a] Completed 500 Internal Server Error in 4ms (ActiveRecord: 2.0ms)
+F, [2018-04-08T14:11:45.034834 #18023] FATAL -- : [856ccf8f-af4f-494f-b665-6544e8803c6a]   
+F, [2018-04-08T14:11:45.034928 #18023] FATAL -- : [856ccf8f-af4f-494f-b665-6544e8803c6a] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 1: SELECT "currencies".* FROM "currencies"
+                                   ^
+: SELECT "currencies".* FROM "currencies"):
+F, [2018-04-08T14:11:45.034984 #18023] FATAL -- : [856ccf8f-af4f-494f-b665-6544e8803c6a]   
+F, [2018-04-08T14:11:45.035046 #18023] FATAL -- : [856ccf8f-af4f-494f-b665-6544e8803c6a] app/controllers/api/currencies_controller.rb:4:in `currency_list'
+I, [2018-04-08T14:11:45.037260 #18023]  INFO -- : [b32d3f79-a4fb-4565-a8ed-a910eee78908] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.9ms)
+F, [2018-04-08T14:11:45.038775 #18023] FATAL -- : [b32d3f79-a4fb-4565-a8ed-a910eee78908]   
+F, [2018-04-08T14:11:45.038870 #18023] FATAL -- : [b32d3f79-a4fb-4565-a8ed-a910eee78908] ActiveRecord::StatementInvalid (PG::UndefinedTable: ОШИБКА:  отношение "currencies" не существует
+LINE 8:                WHERE a.attrelid = '"currencies"'::regclass
+                                          ^
+:               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+                     pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,
+                     c.collname, col_description(a.attrelid, a.attnum) AS comment
+                FROM pg_attribute a
+                LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+                LEFT JOIN pg_type t ON a.atttypid = t.oid
+                LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation
+               WHERE a.attrelid = '"currencies"'::regclass
+                 AND a.attnum > 0 AND NOT a.attisdropped
+               ORDER BY a.attnum
+):
+F, [2018-04-08T14:11:45.038925 #18023] FATAL -- : [b32d3f79-a4fb-4565-a8ed-a910eee78908]   
+F, [2018-04-08T14:11:45.038974 #18023] FATAL -- : [b32d3f79-a4fb-4565-a8ed-a910eee78908] app/controllers/api/currencies_controller.rb:8:in `currency_reserves'
+D, [2018-04-08T14:12:36.543072 #18339] DEBUG -- :   [1m[35m (431.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+D, [2018-04-08T14:12:36.654391 #18339] DEBUG -- :   [1m[35m (106.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2018-04-08T14:12:36.656119 #18339] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4514503576824018225)[0m
+D, [2018-04-08T14:12:36.841793 #18339] DEBUG -- :   [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+I, [2018-04-08T14:12:36.844464 #18339]  INFO -- : Migrating to CreateCurrenciesTable (20180308093012)
+D, [2018-04-08T14:12:36.884546 #18339] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:37.012768 #18339] DEBUG -- :   [1m[35m (127.1ms)[0m  [1m[35mCREATE TABLE "currencies" ("id" bigserial primary key, "name" character varying NOT NULL, "code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2018-04-08T14:12:37.068667 #18339] DEBUG -- :   [1m[35m (37.0ms)[0m  [1m[35mCREATE  INDEX  "index_currencies_on_name" ON "currencies"  ("name")[0m
+D, [2018-04-08T14:12:37.102538 #18339] DEBUG -- :   [1m[35m (29.6ms)[0m  [1m[35mCREATE  INDEX  "index_currencies_on_code" ON "currencies"  ("code")[0m
+D, [2018-04-08T14:12:37.110058 #18339] DEBUG -- :   [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180308093012"]]
+D, [2018-04-08T14:12:37.131595 #18339] DEBUG -- :   [1m[35m (20.9ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-04-08T14:12:37.131815 #18339]  INFO -- : Migrating to AddWalletExampleToCurrencies (20180309084237)
+D, [2018-04-08T14:12:37.145156 #18339] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:37.146863 #18339] DEBUG -- :   [1m[35m (1.0ms)[0m  [1m[35mALTER TABLE "currencies" ADD "wallet_example" character varying[0m
+D, [2018-04-08T14:12:37.148933 #18339] DEBUG -- :   [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180309084237"]]
+D, [2018-04-08T14:12:37.164938 #18339] DEBUG -- :   [1m[35m (15.5ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-04-08T14:12:37.165130 #18339]  INFO -- : Migrating to CreateCourses (20180318072120)
+D, [2018-04-08T14:12:37.176997 #18339] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:37.270200 #18339] DEBUG -- :   [1m[35m (92.1ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "from_cur" character varying, "to_cur" character varying, "course" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2018-04-08T14:12:37.272495 #18339] DEBUG -- :   [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180318072120"]]
+D, [2018-04-08T14:12:37.287130 #18339] DEBUG -- :   [1m[35m (14.1ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-04-08T14:12:37.287321 #18339]  INFO -- : Migrating to CreateReserves (20180322192500)
+D, [2018-04-08T14:12:37.302300 #18339] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:37.365705 #18339] DEBUG -- :   [1m[35m (62.2ms)[0m  [1m[35mCREATE TABLE "reserves" ("id" bigserial primary key, "currency_id" bigint, "currency_reserve" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2018-04-08T14:12:37.426454 #18339] DEBUG -- :   [1m[35m (56.2ms)[0m  [1m[35mCREATE  INDEX  "index_reserves_on_currency_id" ON "reserves"  ("currency_id")[0m
+D, [2018-04-08T14:12:37.428925 #18339] DEBUG -- :   [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180322192500"]]
+D, [2018-04-08T14:12:37.442739 #18339] DEBUG -- :   [1m[35m (13.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-04-08T14:12:37.442939 #18339]  INFO -- : Migrating to CreateReviews (20180403185042)
+D, [2018-04-08T14:12:37.459935 #18339] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:37.549652 #18339] DEBUG -- :   [1m[35m (88.6ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" bigserial primary key, "author" text, "message" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+D, [2018-04-08T14:12:37.551948 #18339] DEBUG -- :   [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180403185042"]]
+D, [2018-04-08T14:12:37.565083 #18339] DEBUG -- :   [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:37.571692 #18339] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+D, [2018-04-08T14:12:37.580844 #18339] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:37.583741 #18339] DEBUG -- :   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "production"], ["created_at", "2018-04-08 11:12:37.581271"], ["updated_at", "2018-04-08 11:12:37.581271"]]
+D, [2018-04-08T14:12:37.587180 #18339] DEBUG -- :   [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:37.587775 #18339] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4514503576824018225)[0m
+D, [2018-04-08T14:12:46.187514 #18348] DEBUG -- :   [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+D, [2018-04-08T14:12:46.229838 #18348] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.233106 #18348] DEBUG -- :   [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "currencies" ("name", "code", "created_at", "updated_at", "wallet_example") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Bitcoin"], ["code", "BTC"], ["created_at", "2018-04-08 11:12:46.230110"], ["updated_at", "2018-04-08 11:12:46.230110"], ["wallet_example", "1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2"]]
+D, [2018-04-08T14:12:46.240254 #18348] DEBUG -- :   [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:46.241040 #18348] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.243056 #18348] DEBUG -- :   [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "currencies" ("name", "code", "created_at", "updated_at", "wallet_example") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Litecoin"], ["code", "LTC"], ["created_at", "2018-04-08 11:12:46.241325"], ["updated_at", "2018-04-08 11:12:46.241325"], ["wallet_example", "L02hA45CD21PXHEu6U9mKOzvCQxiMCmjYH"]]
+D, [2018-04-08T14:12:46.251220 #18348] DEBUG -- :   [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:46.252029 #18348] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.253906 #18348] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "currencies" ("name", "code", "created_at", "updated_at", "wallet_example") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Ripple"], ["code", "XRP"], ["created_at", "2018-04-08 11:12:46.252225"], ["updated_at", "2018-04-08 11:12:46.252225"], ["wallet_example", "rG1QQv2nh2gr7RCZ1P8YYcBUKCCN633jCn"]]
+D, [2018-04-08T14:12:46.262446 #18348] DEBUG -- :   [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:46.263275 #18348] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.265160 #18348] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "currencies" ("name", "code", "created_at", "updated_at", "wallet_example") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "Qiwi"], ["code", "RUR"], ["created_at", "2018-04-08 11:12:46.263536"], ["updated_at", "2018-04-08 11:12:46.263536"], ["wallet_example", "+79121234567"]]
+D, [2018-04-08T14:12:46.273494 #18348] DEBUG -- :   [1m[35m (7.8ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:46.296578 #18348] DEBUG -- :   [1m[36mCurrency Load (0.4ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."name" = $1 LIMIT $2[0m  [["name", "Bitcoin"], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.313237 #18348] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.324943 #18348] DEBUG -- :   [1m[36mCurrency Load (0.3ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.330241 #18348] DEBUG -- :   [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "reserves" ("currency_id", "currency_reserve", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["currency_id", 1], ["currency_reserve", 0.0345], ["created_at", "2018-04-08 11:12:46.328169"], ["updated_at", "2018-04-08 11:12:46.328169"]]
+D, [2018-04-08T14:12:46.351159 #18348] DEBUG -- :   [1m[35m (20.3ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:46.352365 #18348] DEBUG -- :   [1m[36mCurrency Load (0.5ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."name" = $1 LIMIT $2[0m  [["name", "Litecoin"], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.353439 #18348] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.355349 #18348] DEBUG -- :   [1m[36mCurrency Load (0.4ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.357719 #18348] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "reserves" ("currency_id", "currency_reserve", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["currency_id", 2], ["currency_reserve", 0.1345], ["created_at", "2018-04-08 11:12:46.355950"], ["updated_at", "2018-04-08 11:12:46.355950"]]
+D, [2018-04-08T14:12:46.362369 #18348] DEBUG -- :   [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:46.363402 #18348] DEBUG -- :   [1m[36mCurrency Load (0.4ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."name" = $1 LIMIT $2[0m  [["name", "Ripple"], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.364242 #18348] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.365712 #18348] DEBUG -- :   [1m[36mCurrency Load (0.4ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.367785 #18348] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "reserves" ("currency_id", "currency_reserve", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["currency_id", 3], ["currency_reserve", 0.2], ["created_at", "2018-04-08 11:12:46.366184"], ["updated_at", "2018-04-08 11:12:46.366184"]]
+D, [2018-04-08T14:12:46.373455 #18348] DEBUG -- :   [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+D, [2018-04-08T14:12:46.374394 #18348] DEBUG -- :   [1m[36mCurrency Load (0.4ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."name" = $1 LIMIT $2[0m  [["name", "Qiwi"], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.375288 #18348] DEBUG -- :   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+D, [2018-04-08T14:12:46.376782 #18348] DEBUG -- :   [1m[36mCurrency Load (0.4ms)[0m  [1m[34mSELECT  "currencies".* FROM "currencies" WHERE "currencies"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+D, [2018-04-08T14:12:46.378825 #18348] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "reserves" ("currency_id", "currency_reserve", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["currency_id", 4], ["currency_reserve", 10000.0], ["created_at", "2018-04-08 11:12:46.377254"], ["updated_at", "2018-04-08 11:12:46.377254"]]
+D, [2018-04-08T14:12:46.384550 #18348] DEBUG -- :   [1m[35m (5.2ms)[0m  [1m[35mCOMMIT[0m
+I, [2018-04-08T14:12:54.797364 #18357]  INFO -- : [3b23c9e7-4459-44c7-bd66-ffe3c5aedf43] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:12:54 +0300
+I, [2018-04-08T14:12:54.803404 #18357]  INFO -- : [3b23c9e7-4459-44c7-bd66-ffe3c5aedf43] Processing by Api::CurrenciesController#currency_list as HTML
+I, [2018-04-08T14:12:54.798370 #18357]  INFO -- : [62bacb3f-ccf1-4849-aa45-a4895bde54e7] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:12:54 +0300
+I, [2018-04-08T14:12:54.813858 #18357]  INFO -- : [62bacb3f-ccf1-4849-aa45-a4895bde54e7] Processing by Api::CurrenciesController#currency_reserves as HTML
+D, [2018-04-08T14:12:54.833148 #18357] DEBUG -- : [3b23c9e7-4459-44c7-bd66-ffe3c5aedf43]   [1m[36mCurrency Load (2.7ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:12:54.860785 #18357]  INFO -- : [3b23c9e7-4459-44c7-bd66-ffe3c5aedf43] Completed 200 OK in 57ms (Views: 1.2ms | ActiveRecord: 22.2ms)
+D, [2018-04-08T14:12:54.869668 #18357] DEBUG -- : [62bacb3f-ccf1-4849-aa45-a4895bde54e7]   [1m[35m (1.5ms)[0m  [1m[34mSELECT "currencies"."name", "currencies"."code", "currency_reserve" FROM "currencies" LEFT OUTER JOIN "reserves" ON "reserves"."currency_id" = "currencies"."id"[0m
+I, [2018-04-08T14:12:54.870923 #18357]  INFO -- : [62bacb3f-ccf1-4849-aa45-a4895bde54e7] Completed 200 OK in 57ms (Views: 0.4ms | ActiveRecord: 36.3ms)
+I, [2018-04-08T14:12:54.967884 #18357]  INFO -- : [c2f276b3-1170-4514-ba64-5ffa36c14914] Started GET "/api/currencies/current_course?sell_currency=BTC&buy_currency=LTC" for 127.0.0.1 at 2018-04-08 14:12:54 +0300
+I, [2018-04-08T14:12:54.969261 #18357]  INFO -- : [c2f276b3-1170-4514-ba64-5ffa36c14914] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T14:12:54.969374 #18357]  INFO -- : [c2f276b3-1170-4514-ba64-5ffa36c14914]   Parameters: {"sell_currency"=>"BTC", "buy_currency"=>"LTC"}
+I, [2018-04-08T14:12:55.435819 #18357]  INFO -- : [c2f276b3-1170-4514-ba64-5ffa36c14914] Completed 200 OK in 466ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2018-04-08T14:12:56.527330 #18357]  INFO -- : [df93508a-600a-4acf-b392-42cd50331cc6] Started GET "/api/currencies/currency_list" for 127.0.0.1 at 2018-04-08 14:12:56 +0300
+I, [2018-04-08T14:12:56.528368 #18357]  INFO -- : [0af0cb6a-25a1-4713-8fe9-930a56105bfc] Started GET "/api/currencies/currency_reserves" for 127.0.0.1 at 2018-04-08 14:12:56 +0300
+I, [2018-04-08T14:12:56.529414 #18357]  INFO -- : [0af0cb6a-25a1-4713-8fe9-930a56105bfc] Processing by Api::CurrenciesController#currency_reserves as HTML
+I, [2018-04-08T14:12:56.532255 #18357]  INFO -- : [df93508a-600a-4acf-b392-42cd50331cc6] Processing by Api::CurrenciesController#currency_list as HTML
+D, [2018-04-08T14:12:56.536362 #18357] DEBUG -- : [0af0cb6a-25a1-4713-8fe9-930a56105bfc]   [1m[35m (1.5ms)[0m  [1m[34mSELECT "currencies"."name", "currencies"."code", "currency_reserve" FROM "currencies" LEFT OUTER JOIN "reserves" ON "reserves"."currency_id" = "currencies"."id"[0m
+I, [2018-04-08T14:12:56.538406 #18357]  INFO -- : [0af0cb6a-25a1-4713-8fe9-930a56105bfc] Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+D, [2018-04-08T14:12:56.538827 #18357] DEBUG -- : [df93508a-600a-4acf-b392-42cd50331cc6]   [1m[36mCurrency Load (2.7ms)[0m  [1m[34mSELECT "currencies".* FROM "currencies"[0m
+I, [2018-04-08T14:12:56.545608 #18357]  INFO -- : [df93508a-600a-4acf-b392-42cd50331cc6] Completed 200 OK in 11ms (Views: 2.0ms | ActiveRecord: 2.7ms)
+I, [2018-04-08T14:12:56.606663 #18357]  INFO -- : [22306e8c-9f7c-4c5b-8c2e-c1b9fb91a9c1] Started GET "/api/currencies/current_course?sell_currency=BTC&buy_currency=LTC" for 127.0.0.1 at 2018-04-08 14:12:56 +0300
+I, [2018-04-08T14:12:56.607682 #18357]  INFO -- : [22306e8c-9f7c-4c5b-8c2e-c1b9fb91a9c1] Processing by Api::CurrenciesController#current_course as HTML
+I, [2018-04-08T14:12:56.607796 #18357]  INFO -- : [22306e8c-9f7c-4c5b-8c2e-c1b9fb91a9c1]   Parameters: {"sell_currency"=>"BTC", "buy_currency"=>"LTC"}
+I, [2018-04-08T14:12:57.066036 #18357]  INFO -- : [22306e8c-9f7c-4c5b-8c2e-c1b9fb91a9c1] Completed 200 OK in 458ms (Views: 0.3ms | ActiveRecord: 0.0ms)
