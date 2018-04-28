@@ -18,12 +18,16 @@ gem 'whenever', require: false
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+group :production do
+  gem 'unicorn'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 group :development do
   gem 'capistrano', '~> 3.10', require: false
   gem 'capistrano-rails', '~> 1.3', require: false
+  gem 'capistrano-bundler'
+  gem 'capistrano-rvm'
 end
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
